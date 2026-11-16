@@ -122,13 +122,6 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.tag}"
     padding: "1px 0.375rem"
-  cost-stamp:
-    textColor: "{colors.ink}"
-    typography: "{typography.label}"
-    rounded: "{rounded.plate}"
-    padding: "0.15rem 0.45rem"
-  cost-stamp-paid:
-    textColor: "{colors.seal}"
   paper-sheet:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
@@ -161,7 +154,7 @@ components:
 
 Margincite's public page is set as a forensic bench. A finding is laid down on white paper over a grey bench, numbered yellow markers are set beside each piece of evidence, a black-and-white scale is laid along two edges, and a printed exhibit label says what was found and what the fix is. The page argues by showing: every fix arrives with its evidence. It is light because people read it at a desk, and it is dense the way a case file is dense, with ruled logs and labelled rows rather than cards and gradients.
 
-The materials are few and physical. Bench grey and paper white are the grounds. Evidence-black ink does the structure: rules, plates, borders, buttons. Marker yellow is the one loud colour, and it belongs to marks: the tents, the key words of the headline, the lettering on ink badges, the closing field and the hover ground. Seal red appears only on what was found or what costs money. Type is wide, heavy Archivo capitals for anything printed by a label machine or set as a heading, Public Sans for reading, and JetBrains Mono for files, commands, counts and recorded values.
+The materials are few and physical. Bench grey and paper white are the grounds. Evidence-black ink does the structure: rules, plates, borders, buttons. Marker yellow is the one loud colour, and it belongs to marks: the tents, the key words of the headline, the lettering on ink badges, the closing field and the hover ground. Seal red appears only on what was found. Type is wide, heavy Archivo capitals for anything printed by a label machine or set as a heading, Public Sans for reading, and JetBrains Mono for files, commands, counts and recorded values.
 
 Motion is one authored moment, on the exhibit, on load: markers set down 1, 2, 3, the scale drawn up and then along, the exhibit label placed. The visit count in the top bar rolls its digit wheels once when the number arrives. Under reduced motion all of it is off and everything is already in place.
 
@@ -171,19 +164,19 @@ Motion is one authored moment, on the exhibit, on load: markers set down 1, 2, 3
 - Wide (112% to 125%) heavy Archivo capitals for headings, labels and buttons.
 - Mono for every file name, command, count and recorded value.
 - Ruled logs (tables and lists with ink and grey rules) instead of cards.
-- Forensic props drawn in code: numbered A-frame markers, a scale, rubber stamps, a numbering-stamp counter.
+- Forensic props drawn in code: numbered A-frame markers, a scale, a numbering-stamp counter.
 - Square-shouldered corners (3px) and one soft shadow, only for paper on the bench.
 
 ## Colors
 
-A near-neutral bench-and-paper palette with evidence-black ink, one saturated yellow for marks and one red held back for findings and costs.
+A near-neutral bench-and-paper palette with evidence-black ink, one saturated yellow for marks and one red held back for findings.
 
 ### Primary
 - **Marker Yellow** (#ffd31a): the evidence tents, the highlighted key words of the hero headline (laid behind the text as a flat band), the lettering on ink badges and ink plates ("Example", "Exhibit 1 of 17", the SEO/AIO/GEO column plates, the `$` prompt on the ink section), the whole "Run it on your own site" field, text selection, and the hover ground of every button.
 - **Marker Shade** (#d9ad00): only inside the marker drawing, for the folded side and the top lip of the tent. Not used as a surface or text colour.
 
 ### Secondary
-- **Seal Red** (#c8231b): the blocked `Disallow: /` lines in the exhibit (bold mono), and the "Paid service" cost stamp. 5.66:1 on paper.
+- **Seal Red** (#c8231b): the blocked `Disallow: /` lines in the exhibit (bold mono). 5.66:1 on paper.
 
 ### Neutral
 - **Evidence Ink** (#121315 light, #eceee9 dark): text, every structural rule and border, and the primary button ground (its lettering is the bench colour, so the button inverts with the room).
@@ -214,7 +207,7 @@ Dark is the default, also without JavaScript. A sun/moon switch in the top bar (
 The marker-yellow field ("Run it on your own site") is lit the same in both rooms: `.on-marker` resets the light values inside it.
 
 ### Named Rules
-**The Seal Rule.** Seal red marks only what was found (the blocked lines in an exhibit) or what costs money (the "Paid service" stamp). It is not an error colour, a link colour or an accent.
+**The Seal Rule.** Seal red marks only what was found (the blocked lines in an exhibit). It is not an error colour, a link colour, a price marker or an accent.
 
 **The Marker Is A Mark Rule.** Marker yellow is for things that point at evidence or ask to be acted on: tents, highlighted key words, ink-plate lettering, the closing field, hover grounds. It is never a body-text colour on light grounds and never a gradient.
 
@@ -235,7 +228,7 @@ The marker-yellow field ("Run it on your own site") is lit the same in both room
 - **Lead** (400, clamp(1.125rem, 1.4vw, 1.3125rem), 1.55): the paragraph under a heading, in Ink Soft, held to the 38rem measure.
 - **Body** (400, 1.0625rem, 1.6, tabular figures): all running text. `text-wrap: pretty` on paragraphs, `balance` on headings.
 - **Small** (400, 0.9375rem): status lines, the "Needs" column, the costs note, footer copy.
-- **Label** (700, 0.78rem, 0.08em, uppercase, width 112%): nav links (0.8125rem), table headers, exhibit-tag names, badges, stamps (0.6875rem), the hero feature strip (0.8125rem).
+- **Label** (700, 0.78rem, 0.08em, uppercase, width 112%): nav links (0.8125rem), table headers, exhibit-tag names, badges, the hero feature strip (0.8125rem).
 - **Mono** (400 or 700, 0.8125rem; 0.9375rem for code lines from 640px): file names, robots.txt lines, commands, recorded values in the exhibit tag, reach counts, SEO/AIO/GEO tags (0.75rem bold), the visit count. Ligatures off.
 
 ### Named Rules
@@ -259,7 +252,7 @@ Breakpoints are Tailwind's defaults: 40rem, 48rem, 64rem. The nav is 4rem tall a
 
 ## Elevation & Depth
 
-The system is flat except for one material: paper laid on the bench. A sheet of paper casts a soft, short shadow with a slight drop, which is what makes the bench read as a surface. Ink plates, badges, stamps, buttons and sections have no shadow. Depth otherwise comes from the bench-deep recess under the exhibit and from the exhibit tag overlapping the bench's bottom edge by 2rem on desktop.
+The system is flat except for one material: paper laid on the bench. A sheet of paper casts a soft, short shadow with a slight drop, which is what makes the bench read as a surface. Ink plates, badges, buttons and sections have no shadow. Depth otherwise comes from the bench-deep recess under the exhibit and from the exhibit tag overlapping the bench's bottom edge by 2rem on desktop.
 
 ### Shadow Vocabulary
 - **Paper on bench** (`box-shadow: 0 1px 2px rgb(18 19 21 / 0.12), 0 14px 28px -10px rgb(18 19 21 / 0.28)`): every paper sheet: the exhibit document and tag, the sample list, the finding sheet, the terminal.
@@ -269,11 +262,11 @@ The system is flat except for one material: paper laid on the bench. A sheet of 
 
 ## Shapes
 
-Corners are square-shouldered: 3px on buttons, badges, plates, stamps, sheets and the visit stamp; 2px on the small SEO/AIO/GEO tags. Nothing is pill-shaped or circular.
+Corners are square-shouldered: 3px on buttons, badges, plates, sheets and the visit stamp; 2px on the small SEO/AIO/GEO tags. Nothing is pill-shaped or circular.
 
-Borders are ink and come in three weights: 1px for section edges, the nav bottom and the hero strip; 1.5px for the scale, the exhibit tag, the sample list and the SEO/AIO/GEO tags; 2px for buttons, stamps, the finding sheet, the terminal and the visit stamp. Inside logs, the header rule is 2px ink and row rules are 1px Rule Grey.
+Borders are ink and come in three weights: 1px for section edges, the nav bottom and the hero strip; 1.5px for the scale, the exhibit tag, the sample list and the SEO/AIO/GEO tags; 2px for buttons, the finding sheet, the terminal and the visit stamp. Inside logs, the header rule is 2px ink and row rules are 1px Rule Grey.
 
-Two shapes are drawn rather than boxed. The evidence marker is a folded A-frame tent (yellow face, ink outline 1.5px with round joins, a shaded side and lip, an Archivo 850 numeral). The planned marker is the same tent as a dashed outline (2px, dash 4 / 3.2) for things that are coming later. Rubber stamps sit rotated by -2deg.
+Two shapes are drawn rather than boxed. The evidence marker is a folded A-frame tent (yellow face, ink outline 1.5px with round joins, a shaded side and lip, an Archivo 850 numeral). The planned marker is the same tent as a dashed outline (2px, dash 4 / 3.2) for things that are coming later.
 
 ## Components
 
@@ -285,9 +278,8 @@ Ink plates with wide label lettering; hover lays marker yellow under the words.
 - **Compact:** 2.6rem tall, 0.45rem 0.95rem padding, 0.8125rem lettering. Used in the top bar; on phones the GitHub button is icon-only.
 - **Hover / Focus:** ground and colour swap to marker yellow and ink over 160ms on the ease-out-expo curve. On the marker-yellow field the hover ground is paper instead. Focus is a 3px ink outline offset 3px; on ink grounds (the How it works band and the footer) it turns marker yellow.
 
-### Chips (tags and stamps)
+### Chips (tags and badges)
 - **SEO/AIO/GEO tags:** mono 0.75rem bold, 1.5px ink border, 2px corners. They say which kind of search a feature or fix serves.
-- **Cost stamps:** label lettering 0.6875rem in a 2px currentColor border, 3px corners, rotated -2deg. "Free" and "Your AI key" are ink; "Paid service" is seal red. The stamp names what the connected service costs, never Margincite, which is free.
 - **Example badge:** label lettering in marker yellow on an ink plate. Every illustrated finding carries it.
 
 ### Cards / Containers (paper sheets)
@@ -333,7 +325,8 @@ Under `prefers-reduced-motion: reduce` every animation and transition is cut to 
 - **Do** put any new motion behind `prefers-reduced-motion: no-preference` and on the ease-out-expo curve.
 
 ### Don't:
-- **Don't** use seal red for anything except what was found or what costs money.
+- **Don't** use seal red for anything except what was found.
+- **Don't** stamp prices or costs on features. Connecting an outside service is the visitor's choice; the "Needs" column names the service and the FAQ answers cost questions.
 - **Don't** put a shadow on anything that is not paper laid on the bench, and don't use hard offset shadows.
 - **Don't** use gradients as fills or backgrounds. The only gradients in the system are the scale's tick pattern.
 - **Don't** set Ink Faint text on bench or bench-deep grounds.
@@ -343,7 +336,7 @@ Under `prefers-reduced-motion: reduce` every animation and transition is cut to 
 
 ### Known drift (in the build, not part of the system)
 - The "How it works" dashed step connector uses On-Ink Soft at 60% opacity and the command chip border uses it at 50%. Opacity on borders is outside the system; these should be solid On-Ink Soft or a new token.
-- The visit stamp's "Visits" label is 0.5625rem (9px) on phones and 0.625rem from 640px, below the 0.6875rem stamp size used elsewhere.
+- The visit stamp's "Visits" label is 0.5625rem (9px) on phones and 0.625rem from 640px, below the 0.6875rem used for the smallest labels elsewhere.
 - The FAQ plus icon turns over 200ms on the default ease, not 160ms ease-out-expo; the visit stamp's loading pulse is Tailwind's default `animate-pulse`.
 - Paper sheet borders differ side by side in "A closer look": 1.5px on the sample list, 2px on the finding sheet (and 1.5px on the exhibit tag, 2px on the terminal).
 - One-off values: the exhibit bench's 4px radius; Archivo widths of 104% (honesty line), 108% (mobile menu links) and 118% (wordmark) outside the 100/112/125 set.

@@ -12,7 +12,6 @@ const sectionLinks = [
 const github = { label: "Get it on GitHub", href: REPO_URL } as const;
 
 export type Serves = "SEO" | "AIO" | "GEO";
-export type Cost = "free" | "key" | "paid";
 
 export const content = {
 	brand: "Margincite",
@@ -64,65 +63,56 @@ export const content = {
 		heading: "What it does today",
 		intro: "Everything here works in the current release. Each line says what it needs. A feature without its connection is simply off, and the app says how to turn it on.",
 		columns: { what: "What you get", serves: "Serves", needs: "Needs" },
-		costs: { free: "Free", key: "Your AI key", paid: "Paid service" } satisfies Record<Cost, string>,
 		items: [
 			{
 				title: "Crawl and site health",
 				body: "A score, every page found, and checks for titles, headings, links, structured data, robots rules and AI-crawler access.",
 				serves: ["SEO", "GEO"],
 				needs: "Nothing",
-				cost: "free",
 			},
 			{
 				title: "Ranked suggestions",
 				body: "A to-do list built from the failed checks, with the pages each one affects, why it matters and how to fix it.",
 				serves: ["SEO", "AIO", "GEO"],
 				needs: "Nothing",
-				cost: "free",
 			},
 			{
 				title: "AI visibility and mentions",
 				body: "Which assistants mention or cite your site, and for which of your customers' questions.",
 				serves: ["GEO"],
 				needs: "A key for at least one AI provider",
-				cost: "key",
 			},
 			{
 				title: "Rank tracking and AI Overviews",
 				body: "Positions for your keywords, and whether a Google AI Overview appears and cites you.",
 				serves: ["SEO", "AIO"],
 				needs: "A DataForSEO account",
-				cost: "paid",
 			},
 			{
 				title: "Organic traffic and positions",
 				body: "Clicks, impressions and positions from your own search data.",
 				serves: ["SEO"],
 				needs: "Google Search Console",
-				cost: "free",
 			},
 			{
 				title: "Page speed",
 				body: "Core Web Vitals and performance scores for your pages.",
 				serves: ["SEO"],
 				needs: "A PageSpeed Insights key",
-				cost: "free",
 			},
 			{
 				title: "Backlinks",
 				body: "How many links point at the site and which pages they reach.",
 				serves: ["SEO"],
 				needs: "A Bing Webmaster Tools key",
-				cost: "free",
 			},
 			{
 				title: "Keywords",
 				body: "Checks that each target keyword is used where it counts. Search volume and related ideas come from DataForSEO.",
 				serves: ["SEO", "AIO"],
 				needs: "Nothing, or DataForSEO for volume",
-				cost: "free",
 			},
-		] satisfies readonly { title: string; body: string; serves: readonly Serves[]; needs: string; cost: Cost }[],
+		] satisfies readonly { title: string; body: string; serves: readonly Serves[]; needs: string }[],
 	},
 	layers: {
 		heading: "SEO, AIO and GEO, side by side",

@@ -144,15 +144,6 @@
 			var(--color-paper);
 	}
 
-	/* A rubber stamp on the evidence log: outlined capitals, slightly off square. */
-	.stamp {
-		display: inline-block;
-		border: 2px solid currentColor;
-		border-radius: 3px;
-		padding: 0.15rem 0.45rem;
-		rotate: -2deg;
-	}
-
 	/* The numbering stamp in the top bar. Each place is a wheel of ten digits. */
 	.wheel {
 		display: inline-block;

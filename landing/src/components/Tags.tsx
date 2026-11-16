@@ -1,5 +1,4 @@
-import type { Cost, Serves } from "../content";
-import { content } from "../content";
+import type { Serves } from "../content";
 
 /** Which kind of search a feature or fix serves: SEO, AIO or GEO, as small printed tags. */
 export function ServesTags({ serves }: { serves: readonly Serves[] }) {
@@ -12,9 +11,4 @@ export function ServesTags({ serves }: { serves: readonly Serves[] }) {
 			))}
 		</span>
 	);
-}
-
-/** What a feature costs, as a rubber stamp. Paid is stamped in seal red. */
-export function CostStamp({ cost }: { cost: Cost }) {
-	return <span className={"stamp label text-[0.6875rem] " + (cost === "paid" ? "text-seal" : "text-ink")}>{content.features.costs[cost]}</span>;
 }

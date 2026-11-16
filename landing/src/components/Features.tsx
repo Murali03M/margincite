@@ -1,5 +1,5 @@
 import { content } from "../content";
-import { CostStamp, ServesTags } from "./Tags";
+import { ServesTags } from "./Tags";
 
 const features = content.features;
 const cell = "block px-0 py-1 align-top md:table-cell md:px-4 md:py-6";
@@ -34,10 +34,7 @@ export function Features() {
 										<ServesTags serves={item.serves} />
 									</td>
 									<td className={cell + " md:w-[13rem] md:pr-0"}>
-										<span className="flex flex-wrap items-center gap-x-3 gap-y-2 md:flex-col md:items-start">
-											<span className="text-[0.9375rem]">{item.needs}</span>
-											<CostStamp cost={item.cost} />
-										</span>
+										<span className="text-[0.9375rem]">{item.needs}</span>
 									</td>
 								</tr>
 							))}
