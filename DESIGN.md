@@ -12,8 +12,11 @@ colors:
   marker: "#ffd31a"
   marker-deep: "#d9ad00"
   seal: "#c8231b"
-  on-ink: "#f4f5f2"
-  on-ink-soft: "#b9bdc2"
+  plate: "#121315"
+  plate-rule: "#5a5f66"
+  on-plate: "#f4f5f2"
+  on-plate-soft: "#b9bdc2"
+  on-marker: "#121315"
 typography:
   display:
     fontFamily: "Archivo Variable, Arial, sans-serif"
@@ -85,7 +88,7 @@ spacing:
 components:
   button-primary:
     backgroundColor: "{colors.ink}"
-    textColor: "{colors.on-ink}"
+    textColor: "{colors.on-plate}"
     typography: "{typography.button}"
     rounded: "{rounded.plate}"
     padding: "0.6rem 1.3rem"
@@ -144,7 +147,7 @@ components:
     padding: "0.2rem 0.375rem 0.125rem"
   section-ink:
     backgroundColor: "{colors.ink}"
-    textColor: "{colors.on-ink}"
+    textColor: "{colors.on-plate}"
   section-marker:
     backgroundColor: "{colors.marker}"
     textColor: "{colors.ink}"
@@ -183,14 +186,32 @@ A near-neutral bench-and-paper palette with evidence-black ink, one saturated ye
 - **Seal Red** (#c8231b): the blocked `Disallow: /` lines in the exhibit (bold mono), and the "Paid" cost stamp. 5.66:1 on paper.
 
 ### Neutral
-- **Evidence Ink** (#121315): text, every structural rule and border, button plates, badges, the "How it works" section and the footer ground. Also the browser theme colour.
+- **Evidence Ink** (#121315 light, #eceee9 dark): text, every structural rule and border, and the primary button ground (its lettering is the bench colour, so the button inverts with the room).
 - **Ink Soft** (#464a50): lead paragraphs, secondary copy, notes, the file name in the exhibit header. 8.9:1 on paper, 7.6:1 on bench.
 - **Ink Faint** (#6b7076): line numbers, table column headers, the `$` prompt in the terminal, label names in the exhibit tag. 4.99:1 on paper.
 - **Bench** (#eceeea): the page ground behind the hero, "SEO, AIO and GEO" and "A closer look". A grey with a very slight green cast (oklch hue 129, chroma 0.006).
 - **Bench Deep** (#dfe2dc): the recessed bench the exhibit is laid on in the hero.
 - **Paper** (#ffffff): the nav bar, the "What it does today" and FAQ sections, and every sheet laid on the bench (exhibit document, exhibit tag, sample list, finding sheet, terminal).
 - **Rule Grey** (#c4c8c2): the thin row rules inside logs, tables, sheets and the mobile menu. Never used for text.
-- **On-Ink** (#f4f5f2) and **On-Ink Soft** (#b9bdc2): headings and body copy on ink grounds.
+- **Plate** (#121315 light, #08090a dark): solid dark fills that stay dark in both rooms: badges, the exhibit tag head, the SEO/AIO/GEO column plates, the "How it works" band and the footer. **On-Plate** (#f4f5f2) and **On-Plate Soft** (#b9bdc2) letter them; **Plate Rule** (#5a5f66) draws borders on them.
+- **On-Marker** (#121315 in both rooms): lettering on marker yellow and the strokes and numbers on the evidence markers. Markers are physical yellow objects, so they never invert.
+
+### Two rooms
+Dark is the default, also without JavaScript. A sun/moon switch in the top bar (inside the menu on phones) turns on the light room; the choice is kept in this browser under `margincite:theme`, and a script in `index.html` applies it before the page paints.
+
+| Token | Light room | Dark room |
+|---|---|---|
+| bench | #eceeea | #131416 |
+| bench-deep | #dfe2dc | #0b0c0d |
+| paper | #ffffff | #1d1f23 (with a 1px #2f3338 edge, since shadows read weakly on dark) |
+| ink | #121315 | #eceee9 |
+| ink-soft | #464a50 | #b3b8be |
+| ink-faint | #6b7076 | #8d939a (5.2:1 on paper) |
+| rule | #c4c8c2 | #34383e |
+| seal | #c8231b | #ff6a5e (5.2:1 on paper) |
+| marker | #ffd31a | #ffd31a |
+
+The marker-yellow field ("Run it on your own site") is lit the same in both rooms: `.on-marker` resets the light values inside it.
 
 ### Named Rules
 **The Seal Rule.** Seal red marks only what was found (the blocked lines in an exhibit) or what costs money (the "Paid" stamp). It is not an error colour, a link colour or an accent.
@@ -259,7 +280,7 @@ Two shapes are drawn rather than boxed. The evidence marker is a folded A-frame 
 ### Buttons
 Ink plates with wide label lettering; hover lays marker yellow under the words.
 - **Shape:** square-shouldered (3px), 2px ink border, minimum height 3.25rem.
-- **Primary:** ink ground, on-ink lettering, padding 0.6rem 1.3rem, Archivo 750 at 112% width, uppercase, 0.06em tracking. A GitHub mark leads and an arrow trails on GitHub links.
+- **Primary:** ink ground, bench-coloured lettering, padding 0.6rem 1.3rem, Archivo 750 at 112% width, uppercase, 0.06em tracking. A GitHub mark leads and an arrow trails on GitHub links.
 - **Line:** transparent ground, ink lettering, same border.
 - **Compact:** 2.6rem tall, 0.45rem 0.95rem padding, 0.8125rem lettering. Used in the top bar; on phones the GitHub button is icon-only.
 - **Hover / Focus:** ground and colour swap to marker yellow and ink over 160ms on the ease-out-expo curve. On the marker-yellow field the hover ground is paper instead. Focus is a 3px ink outline offset 3px; on ink grounds (the How it works band and the footer) it turns marker yellow.

@@ -7,13 +7,13 @@ export function Marker({ n, className }: MarkProps & { n: number | string }) {
 	return (
 		<svg viewBox="0 0 48 44" className={className} aria-hidden>
 			<path d="M37 5 46 38 43 40 36.2 9Z" fill="var(--color-marker-deep)" />
-			<path d="M11 5h26l7 35H4Z" fill="var(--color-marker)" stroke="var(--color-ink)" strokeWidth="1.5" strokeLinejoin="round" />
+			<path d="M11 5h26l7 35H4Z" fill="var(--color-marker)" stroke="var(--color-on-marker)" strokeWidth="1.5" strokeLinejoin="round" />
 			<path d="M11 5h26l-.8 4H11.8Z" fill="var(--color-marker-deep)" />
 			<text
 				x="24"
 				y="32.5"
 				textAnchor="middle"
-				fill="var(--color-ink)"
+				fill="var(--color-on-marker)"
 				style={{ fontFamily: "var(--font-display)", fontWeight: 850, fontSize: 19, fontStretch: "100%" }}
 			>
 				{n}

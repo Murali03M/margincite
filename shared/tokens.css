@@ -1,6 +1,7 @@
 /* Design tokens and base type for the public pages. Imported after tailwindcss. */
 /* Margincite is set as an evidence room: findings laid on a bench with numbered
-   markers and a measuring scale. Light, because people read it at a desk. */
+   markers and a measuring scale. The values below are the light room; the dark
+   room, the default, redefines them further down. */
 @theme {
 	--color-bench: #eceeea;
 	--color-bench-deep: #dfe2dc;
@@ -12,14 +13,55 @@
 	--color-marker: #ffd31a;
 	--color-marker-deep: #d9ad00;
 	--color-seal: #c8231b;
-	--color-on-ink: #f4f5f2;
-	--color-on-ink-soft: #b9bdc2;
+	/* Plates: solid dark fills for badges, label heads and the dark bands. */
+	--color-plate: #121315;
+	--color-plate-rule: #5a5f66;
+	--color-on-plate: #f4f5f2;
+	--color-on-plate-soft: #b9bdc2;
+	/* Lettering printed on marker yellow, and on the markers themselves. Dark in both rooms. */
+	--color-on-marker: #121315;
+	--color-paper-edge: transparent;
 
 	--font-display: "Archivo Variable", "Arial", sans-serif;
 	--font-body: "Public Sans", system-ui, sans-serif;
 	--font-mono: "JetBrains Mono", ui-monospace, monospace;
 
 	--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* The dark room is the default, also without JavaScript. data-theme="light" turns the lights on. */
+:root:not([data-theme="light"]) {
+	color-scheme: dark;
+	--color-bench: #131416;
+	--color-bench-deep: #0b0c0d;
+	--color-paper: #1d1f23;
+	--color-ink: #eceee9;
+	--color-ink-soft: #b3b8be;
+	--color-ink-faint: #8d939a;
+	--color-rule: #34383e;
+	--color-marker-deep: #c99f00;
+	--color-seal: #ff6a5e;
+	--color-plate: #08090a;
+	--color-plate-rule: #4a4f56;
+	--color-on-plate: #eceee9;
+	--color-on-plate-soft: #a9aeb4;
+	--color-paper-edge: #2f3338;
+}
+:root[data-theme="light"] {
+	color-scheme: light;
+}
+
+/* The marker-yellow field is lit the same way in both rooms. */
+.on-marker {
+	--color-bench: #eceeea;
+	--color-paper: #ffffff;
+	--color-ink: #121315;
+	--color-ink-soft: #3f4349;
+	--color-ink-faint: #575c62;
+	--color-rule: #c4c8c2;
+	--color-seal: #b01f17;
+	--color-paper-edge: transparent;
+	color: var(--color-ink);
 }
 
 @layer base {
@@ -49,7 +91,7 @@
 
 	::selection {
 		background: var(--color-marker);
-		color: var(--color-ink);
+		color: var(--color-on-marker);
 	}
 
 	h1,
@@ -83,8 +125,8 @@
 		outline-offset: 3px;
 	}
 
-	/* On ink grounds the outline turns marker yellow so it stays visible. */
-	.bg-ink :focus-visible {
+	/* On plate grounds the outline turns marker yellow so it stays visible. */
+	.bg-plate :focus-visible {
 		outline-color: var(--color-marker);
 	}
 }

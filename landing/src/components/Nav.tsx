@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Logo } from "./Logo";
+import { ThemeToggle } from "./ThemeToggle";
 import { VisitCounter } from "./VisitCounter";
 import { CloseIcon, GitHubMark, MenuIcon } from "./marks";
 import { content } from "../content";
@@ -29,6 +30,7 @@ export function Nav({ load }: { load?: () => Promise<number | null> }) {
 
 				<div className="flex items-center gap-2 sm:gap-3">
 					<VisitCounter load={load} />
+					<ThemeToggle className="hidden sm:inline-flex" />
 					<a href={CTA.href} className="btn btn-compact hidden sm:inline-flex">
 						<GitHubMark />
 						{CTA.label}
@@ -63,7 +65,10 @@ export function Nav({ load }: { load?: () => Promise<number | null> }) {
 								</a>
 							</li>
 						))}
-						<li className="pb-3 pt-5 sm:hidden">
+						<li className="pt-5 sm:hidden">
+							<ThemeToggle withLabel className="w-full" />
+						</li>
+						<li className="pb-3 pt-3 sm:hidden">
 							<a href={CTA.href} onClick={() => setOpen(false)} className="btn w-full">
 								<GitHubMark />
 								{CTA.label}

@@ -6,7 +6,7 @@ const product = content.product;
 const sample = product.sample;
 
 function ExampleBadge() {
-	return <span className="label rounded-[3px] bg-ink px-2 py-1 text-marker">{product.tag}</span>;
+	return <span className="label rounded-[3px] bg-plate px-2 py-1 text-marker">{product.tag}</span>;
 }
 
 function SampleList() {

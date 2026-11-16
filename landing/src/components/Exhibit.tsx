@@ -35,7 +35,7 @@ function Document() {
 function Tag() {
 	return (
 		<div className="paper place-tag overflow-hidden rounded-[3px] border-[1.5px] border-ink">
-			<div className="label bg-ink px-3 py-2 text-marker">{exhibit.tag.title}</div>
+			<div className="label bg-plate px-3 py-2 text-marker">{exhibit.tag.title}</div>
 			<dl className="m-0">
 				{exhibit.tag.rows.map((row) => (
 					<div key={row.label} className="grid grid-cols-[4.25rem_1fr] gap-3 border-t border-rule px-3 py-2 first:border-t-0">
@@ -53,7 +53,7 @@ export function Exhibit() {
 	return (
 		<figure aria-label={exhibit.label} className="m-0">
 			<div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1">
-				<span className="label rounded-[3px] bg-ink px-2 py-1 text-marker">{exhibit.badge}</span>
+				<span className="label rounded-[3px] bg-plate px-2 py-1 text-marker">{exhibit.badge}</span>
 				<span className="text-[0.875rem] text-ink-soft">{exhibit.note}</span>
 			</div>
 			<div className="relative rounded-[4px] bg-bench-deep p-3 sm:p-6 lg:p-8 lg:pb-14" aria-hidden>

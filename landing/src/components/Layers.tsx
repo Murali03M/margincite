@@ -14,7 +14,7 @@ export function Layers() {
 							<td className="w-[13rem]" />
 							{layers.columns.map((column) => (
 								<th key={column.name} scope="col" className="px-4 pb-5 align-bottom">
-									<span className="inline-block rounded-[3px] bg-ink px-2.5 py-1 font-[family-name:var(--font-display)] text-[1.5rem] font-[850] leading-none text-marker [font-stretch:112%]">
+									<span className="inline-block rounded-[3px] bg-plate px-2.5 py-1 font-[family-name:var(--font-display)] text-[1.5rem] font-[850] leading-none text-marker [font-stretch:112%]">
 										{column.name}
 									</span>
 									<span className="label mt-3 block text-ink-soft">{column.full}</span>

@@ -21,6 +21,28 @@ test.describe("with JavaScript off", () => {
 	});
 });
 
+const ground = (page: import("@playwright/test").Page) => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+
+test.describe("the dark room without JavaScript", () => {
+	test.use({ javaScriptEnabled: false });
+	test("is the default", async ({ page }) => {
+		await page.goto("/");
+		expect(await ground(page)).toBe("rgb(19, 20, 22)");
+	});
+});
+
+test("the page opens dark, switches to light, and remembers it", async ({ page }) => {
+	await page.goto("/");
+	expect(await ground(page)).toBe("rgb(19, 20, 22)");
+	await page.getByRole("button", { name: "Switch to light theme" }).click();
+	expect(await ground(page)).toBe("rgb(236, 238, 234)");
+	await page.reload();
+	expect(await page.evaluate(() => document.documentElement.dataset.theme)).toBe("light");
+	expect(await ground(page)).toBe("rgb(236, 238, 234)");
+	await page.getByRole("button", { name: "Switch to dark theme" }).click();
+	expect(await ground(page)).toBe("rgb(19, 20, 22)");
+});
+
 test("the visit count rolls into the top bar", async ({ page }) => {
 	await page.goto("/");
 	await expect(page.getByRole("status").filter({ hasText: "visits to this page" })).toHaveText("1,234 visits to this page");

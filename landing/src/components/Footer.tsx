@@ -5,12 +5,12 @@ const footer = content.footer;
 
 export function Footer() {
 	return (
-		<footer className="bg-ink text-on-ink">
+		<footer className="bg-plate text-on-plate">
 			<div aria-hidden className="ruler border-x-0 [--unit:1.5rem]" />
 			<div className="wrap grid gap-10 py-14 md:grid-cols-12">
 				<div className="md:col-span-5">
 					<Logo onInk />
-					<p className="mt-4 max-w-[22rem] text-on-ink-soft">{footer.blurb}</p>
+					<p className="mt-4 max-w-[22rem] text-on-plate-soft">{footer.blurb}</p>
 				</div>
 				<nav aria-label="Footer" className="md:col-span-3">
 					<ul className="m-0 list-none space-y-2.5 p-0">
@@ -23,7 +23,7 @@ export function Footer() {
 						))}
 					</ul>
 				</nav>
-				<div className="space-y-2.5 text-[0.9375rem] text-on-ink-soft md:col-span-4">
+				<div className="space-y-2.5 text-[0.9375rem] text-on-plate-soft md:col-span-4">
 					<p>{footer.licence}</p>
 					<p>
 						<a href={footer.source.href}>{footer.source.label}</a>

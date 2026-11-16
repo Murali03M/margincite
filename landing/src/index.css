@@ -67,7 +67,7 @@
 		border-radius: 3px;
 		padding: 0.6rem 1.3rem;
 		background: var(--btn-ground, var(--color-ink));
-		color: var(--btn-text, var(--color-on-ink));
+		color: var(--btn-text, var(--color-bench));
 		font-family: var(--font-display);
 		font-stretch: 112%;
 		font-size: 0.9375rem;
@@ -83,7 +83,8 @@
 	}
 	.btn:hover {
 		background: var(--btn-hover, var(--color-marker));
-		color: var(--color-ink);
+		border-color: var(--btn-hover-edge, var(--color-ink));
+		color: var(--color-on-marker);
 	}
 	.btn-line {
 		--btn-ground: transparent;
@@ -97,6 +98,10 @@
 	/* On the marker-yellow field the hover ground is paper, so it stays visible. */
 	.on-marker .btn {
 		--btn-hover: var(--color-paper);
+	}
+	/* On plate grounds the hover keeps a visible edge. */
+	.bg-plate .btn {
+		--btn-hover-edge: var(--color-marker);
 	}
 
 	.nav-link {
@@ -112,6 +117,8 @@
 	/* Paper laid on the bench: a real, soft shadow with an offset. */
 	.paper {
 		background: var(--color-paper);
+		outline: 1px solid var(--color-paper-edge);
+		outline-offset: -1px;
 		box-shadow:
 			0 1px 2px rgb(18 19 21 / 0.12),
 			0 14px 28px -10px rgb(18 19 21 / 0.28);

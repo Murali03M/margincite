@@ -10,7 +10,7 @@ export function Hero() {
 			<div className="wrap grid gap-x-14 gap-y-8 lg:grid-cols-12 lg:grid-rows-[1fr_auto_auto_1fr] lg:gap-y-0">
 				<h1 className="display lg:col-span-5 lg:row-start-2">
 					{hero.titleLead}{" "}
-					<span className="bg-marker box-decoration-clone px-[0.08em]">{hero.titleAccent}</span>
+					<span className="bg-marker box-decoration-clone px-[0.08em] text-on-marker">{hero.titleAccent}</span>
 				</h1>
 				<div className="lg:col-span-7 lg:col-start-6 lg:row-span-4 lg:row-start-1 lg:self-center">
 					<Exhibit />
