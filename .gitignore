@@ -1,0 +1,17 @@
+node_modules
+target
+backend/target
+backend/.data/
+dist
+dist-ssr
+dist-e2e
+coverage
+test-results
+playwright-report
+.env*
+!.env.example
+.superpowers
+.impeccable/review
+.impeccable/ref
+.impeccable/mocks
+.impeccable/questions

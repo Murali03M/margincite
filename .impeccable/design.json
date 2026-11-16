@@ -1,0 +1,466 @@
+{
+	"schemaVersion": 2,
+	"generatedAt": "2026-11-13T12:32:22.964Z",
+	"title": "Design System: Margincite",
+	"extensions": {
+		"colorMeta": {
+			"course": {
+				"role": "primary",
+				"displayName": "Course Purple",
+				"canonical": "oklch(48.1% 0.228 304)",
+				"tonalRamp": [
+					"oklch(15% 0.086 304)",
+					"oklch(26% 0.138 304)",
+					"oklch(38% 0.198 304)",
+					"oklch(50% 0.228 304)",
+					"oklch(62% 0.228 304)",
+					"oklch(74% 0.166 304)",
+					"oklch(85% 0.092 304)",
+					"oklch(95% 0.028 304)"
+				]
+			},
+			"course-deep": {
+				"role": "primary",
+				"displayName": "Deep Course Purple",
+				"canonical": "oklch(33.9% 0.162 303)",
+				"tonalRamp": [
+					"oklch(15% 0.086 303)",
+					"oklch(26% 0.138 303)",
+					"oklch(38% 0.162 303)",
+					"oklch(50% 0.162 303)",
+					"oklch(62% 0.162 303)",
+					"oklch(74% 0.162 303)",
+					"oklch(85% 0.090 303)",
+					"oklch(95% 0.028 303)"
+				]
+			},
+			"course-pale": {
+				"role": "primary",
+				"displayName": "Pale Course",
+				"canonical": "oklch(90.0% 0.050 311)",
+				"tonalRamp": [
+					"oklch(15% 0.050 311)",
+					"oklch(26% 0.050 311)",
+					"oklch(38% 0.050 311)",
+					"oklch(50% 0.050 311)",
+					"oklch(62% 0.050 311)",
+					"oklch(74% 0.050 311)",
+					"oklch(85% 0.050 311)",
+					"oklch(95% 0.032 311)"
+				]
+			},
+			"open": {
+				"role": "secondary",
+				"displayName": "Open-Land Yellow",
+				"canonical": "oklch(85.3% 0.162 85)",
+				"tonalRamp": [
+					"oklch(15% 0.036 85)",
+					"oklch(26% 0.054 85)",
+					"oklch(38% 0.078 85)",
+					"oklch(50% 0.102 85)",
+					"oklch(62% 0.126 85)",
+					"oklch(74% 0.150 85)",
+					"oklch(85% 0.162 85)",
+					"oklch(95% 0.052 85)"
+				]
+			},
+			"open-soft": {
+				"role": "tertiary",
+				"displayName": "Rough-Open Yellow",
+				"canonical": "oklch(91.4% 0.111 90)",
+				"tonalRamp": [
+					"oklch(15% 0.037 90)",
+					"oklch(26% 0.055 90)",
+					"oklch(38% 0.077 90)",
+					"oklch(50% 0.101 90)",
+					"oklch(62% 0.111 90)",
+					"oklch(74% 0.111 90)",
+					"oklch(85% 0.111 90)",
+					"oklch(95% 0.063 90)"
+				]
+			},
+			"thicket": {
+				"role": "tertiary",
+				"displayName": "Thicket Green",
+				"canonical": "oklch(85.6% 0.113 125)",
+				"tonalRamp": [
+					"oklch(15% 0.045 125)",
+					"oklch(26% 0.067 125)",
+					"oklch(38% 0.095 125)",
+					"oklch(50% 0.113 125)",
+					"oklch(62% 0.113 125)",
+					"oklch(74% 0.113 125)",
+					"oklch(85% 0.113 125)",
+					"oklch(95% 0.113 125)"
+				]
+			},
+			"fight": {
+				"role": "tertiary",
+				"displayName": "Dense-Thicket Green",
+				"canonical": "oklch(72.1% 0.156 133)",
+				"tonalRamp": [
+					"oklch(15% 0.050 133)",
+					"oklch(26% 0.074 133)",
+					"oklch(38% 0.108 133)",
+					"oklch(50% 0.140 133)",
+					"oklch(62% 0.156 133)",
+					"oklch(74% 0.156 133)",
+					"oklch(85% 0.156 133)",
+					"oklch(95% 0.110 133)"
+				]
+			},
+			"marsh": {
+				"role": "tertiary",
+				"displayName": "Marsh Blue",
+				"canonical": "oklch(66.0% 0.136 241)",
+				"tonalRamp": [
+					"oklch(15% 0.040 241)",
+					"oklch(26% 0.060 241)",
+					"oklch(38% 0.088 241)",
+					"oklch(50% 0.116 241)",
+					"oklch(62% 0.136 241)",
+					"oklch(74% 0.136 241)",
+					"oklch(85% 0.082 241)",
+					"oklch(95% 0.026 241)"
+				]
+			},
+			"contour": {
+				"role": "tertiary",
+				"displayName": "Contour Brown",
+				"canonical": "oklch(58.7% 0.124 53)",
+				"tonalRamp": [
+					"oklch(15% 0.046 53)",
+					"oklch(26% 0.068 53)",
+					"oklch(38% 0.096 53)",
+					"oklch(50% 0.124 53)",
+					"oklch(62% 0.124 53)",
+					"oklch(74% 0.124 53)",
+					"oklch(85% 0.094 53)",
+					"oklch(95% 0.028 53)"
+				]
+			},
+			"sheet": {
+				"role": "neutral",
+				"displayName": "Sheet White",
+				"canonical": "oklch(100.0% 0.000 0)",
+				"tonalRamp": [
+					"oklch(15% 0.000 0)",
+					"oklch(26% 0.000 0)",
+					"oklch(38% 0.000 0)",
+					"oklch(50% 0.000 0)",
+					"oklch(62% 0.000 0)",
+					"oklch(74% 0.000 0)",
+					"oklch(85% 0.000 0)",
+					"oklch(95% 0.000 0)"
+				]
+			},
+			"ink": {
+				"role": "neutral",
+				"displayName": "Map Black",
+				"canonical": "oklch(21.3% 0.031 308)",
+				"tonalRamp": [
+					"oklch(15% 0.031 308)",
+					"oklch(26% 0.031 308)",
+					"oklch(38% 0.031 308)",
+					"oklch(50% 0.031 308)",
+					"oklch(62% 0.031 308)",
+					"oklch(74% 0.031 308)",
+					"oklch(85% 0.031 308)",
+					"oklch(95% 0.031 308)"
+				]
+			},
+			"ink-soft": {
+				"role": "neutral",
+				"displayName": "Soft Black",
+				"canonical": "oklch(39.0% 0.043 307)",
+				"tonalRamp": [
+					"oklch(15% 0.043 307)",
+					"oklch(26% 0.043 307)",
+					"oklch(38% 0.043 307)",
+					"oklch(50% 0.043 307)",
+					"oklch(62% 0.043 307)",
+					"oklch(74% 0.043 307)",
+					"oklch(85% 0.043 307)",
+					"oklch(95% 0.031 307)"
+				]
+			}
+		},
+		"typographyMeta": {
+			"display": {
+				"displayName": "Display",
+				"purpose": "The one page heading. Course purple capitals, with the key word in map black."
+			},
+			"headline": {
+				"displayName": "Headline",
+				"purpose": "Section headings, in capitals."
+			},
+			"title": {
+				"displayName": "Title",
+				"purpose": "Item headings inside a section, in capitals. Always map black."
+			},
+			"lead": {
+				"displayName": "Lead",
+				"purpose": "The paragraph directly under a heading."
+			},
+			"body": {
+				"displayName": "Body",
+				"purpose": "All other reading text. Tabular figures."
+			},
+			"caption": {
+				"displayName": "Caption",
+				"purpose": "The map note, key entries and the copyright line."
+			},
+			"label": {
+				"displayName": "Label",
+				"purpose": "Map lettering in spaced capitals: nav links, row labels, the sheet caption, badges."
+			},
+			"button": {
+				"displayName": "Button",
+				"purpose": "Button lettering in spaced capitals."
+			}
+		},
+		"shadows": [],
+		"motion": [
+			{
+				"name": "ease-out-expo",
+				"value": "cubic-bezier(0.16, 1, 0.3, 1)",
+				"purpose": "The one easing curve. Used for every transition and for the course drawing."
+			},
+			{
+				"name": "state-swap",
+				"value": "140ms",
+				"purpose": "Button ink and ground swap, and nav link colour change."
+			},
+			{
+				"name": "course-leg",
+				"value": "620ms",
+				"purpose": "Each course leg is drawn along its length, once, on load."
+			},
+			{
+				"name": "course-mark",
+				"value": "520ms",
+				"purpose": "Each control ring and number appears, scaling from 1.5 to 1."
+			},
+			{
+				"name": "course-tag",
+				"value": "520ms",
+				"purpose": "Each tag slides in 10px from the left, 130ms after its control."
+			},
+			{
+				"name": "course-step",
+				"value": "260ms",
+				"purpose": "Delay between one course step and the next. The first step starts at 250ms."
+			},
+			{
+				"name": "reduced-motion",
+				"value": "0.001ms",
+				"purpose": "With reduced motion set, every animation and transition is cut to nothing and smooth scrolling is off."
+			}
+		],
+		"breakpoints": [
+			{
+				"name": "sm",
+				"value": "40rem"
+			},
+			{
+				"name": "md",
+				"value": "48rem"
+			},
+			{
+				"name": "lg",
+				"value": "64rem"
+			},
+			{
+				"name": "xl",
+				"value": "80rem"
+			}
+		]
+	},
+	"components": [
+		{
+			"name": "Primary Button",
+			"kind": "button",
+			"refersTo": "button-primary",
+			"description": "The main action. Course purple ground, white lettering. Hover swaps ink and ground.",
+			"html": "<a href=\"#\" class=\"ds-btn-primary\">Request early access <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+			"css": ".ds-btn-primary { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary { border: 2px solid var(--color-course, #7c1fc2); background: var(--color-course, #7c1fc2); color: #fff; } .ds-btn-primary:hover { background: #fff; color: var(--color-course, #7c1fc2); } .ds-btn-primary:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+		},
+		{
+			"name": "Line Button",
+			"kind": "button",
+			"refersTo": "button-line",
+			"description": "The second action. White ground, purple lettering and border. Hover swaps ink and ground.",
+			"html": "<a href=\"#\" class=\"ds-btn-line\">See how it works</a>",
+			"css": ".ds-btn-line { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-line { border: 2px solid var(--color-course, #7c1fc2); background: #fff; color: var(--color-course, #7c1fc2); } .ds-btn-line:hover { background: var(--color-course, #7c1fc2); color: #fff; } .ds-btn-line:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+		},
+		{
+			"name": "Button on the Purple Field",
+			"kind": "button",
+			"refersTo": "button-on-course",
+			"description": "The button used on a course purple ground. White with deep purple lettering. Hover swaps them.",
+			"html": "<div class=\"ds-on-course\"><button type=\"button\" class=\"ds-btn-on-course\">Request early access</button></div>",
+			"css": ".ds-on-course { padding: 1.5rem; background: var(--color-course, #7c1fc2); } .ds-btn-on-course { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-on-course { border: 2px solid #fff; background: #fff; color: var(--color-course-deep, #4a0f7a); } .ds-btn-on-course:hover { background: var(--color-course-deep, #4a0f7a); color: #fff; } .ds-btn-on-course:focus-visible { outline: 3px solid var(--color-open, #ffc533); outline-offset: 3px; }"
+		},
+		{
+			"name": "Email Field",
+			"kind": "input",
+			"refersTo": "field",
+			"description": "The one field in the build. It sits on the purple field. Focus and invalid states use open-land yellow.",
+			"html": "<div class=\"ds-field-ground\"><input class=\"ds-field\" type=\"email\" placeholder=\"you@yourcompany.com\" aria-label=\"Email address\"><p class=\"ds-field-error\">That email address does not look right.</p></div>",
+			"css": ".ds-field-ground { padding: 1.5rem; background: var(--color-course, #7c1fc2); } .ds-field { min-height: 3.25rem; width: 100%; box-sizing: border-box; border: 2px solid #fff; border-radius: 4px; padding: 0.55rem 1rem; background: #fff; color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.125rem; } .ds-field:focus-visible { outline: 3px solid var(--color-open, #ffc533); outline-offset: 2px; } .ds-field[aria-invalid=\"true\"] { border-color: var(--color-open, #ffc533); } .ds-field-error { margin: 1rem 0 0; border-radius: 4px; padding: 0.625rem 1rem; background: var(--color-open, #ffc533); color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; font-weight: 600; }"
+		},
+		{
+			"name": "Nav Bar",
+			"kind": "nav",
+			"refersTo": "nav-bar",
+			"description": "White bar with a 2px course purple rule under it. Links are map lettering and turn purple with an underline on hover.",
+			"html": "<nav class=\"ds-nav\" aria-label=\"Main\"><span class=\"ds-nav-brand\">Margincite</span><a href=\"#\" class=\"ds-nav-link\">Features</a><a href=\"#\" class=\"ds-nav-link\">How it works</a><a href=\"#\" class=\"ds-nav-link\">A closer look</a></nav>",
+			"css": ".ds-nav { display: flex; height: 4.5rem; align-items: center; gap: 2.25rem; border-bottom: 2px solid var(--color-course, #7c1fc2); padding: 0 1.25rem; background: #fff; } .ds-nav-brand { margin-right: auto; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: 2rem; line-height: 1; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-course, #7c1fc2); } .ds-nav-link { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; color: var(--color-ink, #1d1524); text-decoration: none; text-underline-offset: 0.22em; text-decoration-thickness: 2px; transition: color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav-link:hover { color: var(--color-course, #7c1fc2); text-decoration: underline; } .ds-nav-link:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+		},
+		{
+			"name": "Example Badge",
+			"kind": "chip",
+			"refersTo": "example-badge",
+			"description": "Marks an illustrated map, report or interface as an example.",
+			"html": "<span class=\"ds-badge\">Example report</span>",
+			"css": ".ds-badge { display: inline-block; border-radius: 4px; padding: 0.125rem 0.5rem; background: var(--color-course, #7c1fc2); color: #fff; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; }"
+		},
+		{
+			"name": "Title Block",
+			"kind": "card",
+			"refersTo": "title-block",
+			"description": "The ruled white panel that carries the page heading over the map, from 80rem wide.",
+			"html": "<div class=\"ds-title-block\"><h1 class=\"ds-title-block-h\">Notes in the <span>margin</span> for your website</h1><p class=\"ds-title-block-lead\">Margincite reads every page of your site and hands back a ranked list of fixes.</p></div>",
+			"css": ".ds-title-block { width: clamp(23rem, 31vw, 31rem); max-width: 100%; box-sizing: border-box; border: 2px solid var(--color-course, #7c1fc2); border-radius: 4px; padding: clamp(1.25rem, 2vw, 2.25rem); background: #fff; } .ds-title-block-h { margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(3.9rem, 5.6vw, 5.5rem); font-weight: 400; line-height: 0.92; letter-spacing: 0.005em; text-transform: uppercase; color: var(--color-course, #7c1fc2); } .ds-title-block-h span { color: var(--color-ink, #1d1524); } .ds-title-block-lead { margin: 1.5rem 0 0; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.42; color: var(--color-ink, #1d1524); }"
+		},
+		{
+			"name": "Control and Tag",
+			"kind": "custom",
+			"refersTo": "map-tag",
+			"description": "A course control on the map: an open purple ring, its number outside the ring, a straight leg that stops short, and a tag sized to its lettering.",
+			"html": "<svg class=\"ds-control\" viewBox=\"0 0 420 130\" role=\"img\" aria-label=\"Control 1: AI crawlers blocked in robots.txt\"><line x1=\"14\" y1=\"122\" x2=\"50\" y2=\"88\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" class=\"ds-control-ink\"/><circle cx=\"72\" cy=\"66\" r=\"31\" fill=\"none\" stroke-width=\"6\" class=\"ds-control-ink\"/><text x=\"29\" y=\"49\" text-anchor=\"end\" font-size=\"69\" class=\"ds-control-number\">1</text><rect x=\"119\" y=\"44.5\" width=\"287\" height=\"43\" rx=\"4\" fill=\"#fff\" stroke-width=\"2.5\" class=\"ds-control-ink\"/><text x=\"262.5\" y=\"73.4\" text-anchor=\"middle\" font-size=\"21\" font-weight=\"600\" class=\"ds-control-tag\">AI crawlers blocked in robots.txt</text></svg>",
+			"css": ".ds-control { display: block; width: 100%; max-width: 26rem; height: auto; } .ds-control-ink { stroke: var(--color-course, #7c1fc2); } .ds-control-number { font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); fill: var(--color-course, #7c1fc2); stroke: #fff; stroke-width: 9; stroke-linejoin: round; paint-order: stroke; } .ds-control-tag { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); fill: var(--color-ink, #1d1524); }"
+		},
+		{
+			"name": "Legend Row",
+			"kind": "custom",
+			"description": "One row of the legend table that lists features: a map symbol, then what it means. Rows are divided by 2px black rules.",
+			"html": "<ul class=\"ds-legend\"><li class=\"ds-legend-row\"><svg viewBox=\"0 0 48 30\" aria-hidden=\"true\" class=\"ds-legend-symbol\"><g fill=\"none\" stroke-linecap=\"round\"><path d=\"M2 24C10 8 22 4 30 9s12 9 16 5\" stroke-width=\"2.6\"/><path d=\"M2 29C12 16 22 12 29 16s11 8 17 5\" stroke-width=\"1.4\"/><path d=\"M6 13C13 4 22 1 31 3\" stroke-width=\"1.4\"/></g></svg><div><h3 class=\"ds-legend-title\">Reads the whole site</h3><p class=\"ds-legend-body\">Follows your sitemap and links page by page.</p></div></li></ul>",
+			"css": ".ds-legend { margin: 0; padding: 0; list-style: none; border-bottom: 2px solid var(--color-ink, #1d1524); } .ds-legend-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); align-items: start; column-gap: 2rem; border-top: 2px solid var(--color-ink, #1d1524); padding: 1.75rem 0; } .ds-legend-symbol { width: 100%; height: auto; margin-top: 0.25rem; stroke: var(--color-contour, #b4652b); } .ds-legend-title { margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(1.75rem, 2.4vw, 2.125rem); font-weight: 400; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; color: var(--color-ink, #1d1524); } .ds-legend-body { margin: 0.625rem 0 0; max-width: 38rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.5; color: var(--color-ink-soft, #4b3f57); }"
+		},
+		{
+			"name": "Control Description Sheet",
+			"kind": "card",
+			"refersTo": "description-sheet",
+			"description": "One suggestion in detail: a ruled white sheet with a numbered control ring, a title, the example badge and labelled rows.",
+			"html": "<article class=\"ds-sheet\"><header class=\"ds-sheet-head\"><span class=\"ds-sheet-ring\"><svg viewBox=\"0 0 64 64\" width=\"56\" height=\"56\" aria-hidden=\"true\"><circle cx=\"32\" cy=\"32\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"/><text x=\"32\" y=\"43\" text-anchor=\"middle\" font-size=\"32\" fill=\"currentColor\">1</text></svg></span><h3 class=\"ds-sheet-title\">AI crawlers are blocked in robots.txt</h3><span class=\"ds-sheet-badge\">Example</span></header><dl class=\"ds-sheet-rows\"><div class=\"ds-sheet-row\"><dt>What we found</dt><dd>robots.txt disallows GPTBot, ClaudeBot and PerplexityBot on every page.</dd></div><div class=\"ds-sheet-row\"><dt>How to fix it</dt><dd>Remove the three Disallow rules, or allow the sections you want read.</dd></div></dl></article>",
+			"css": ".ds-sheet { border: 3px solid var(--color-ink, #1d1524); border-radius: 4px; background: #fff; color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.5; } .ds-sheet-head { display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem; } .ds-sheet-ring { flex: none; color: var(--color-course, #7c1fc2); font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); line-height: 0; } .ds-sheet-title { flex: 1; margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(1.75rem, 2.4vw, 2.125rem); font-weight: 400; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; } .ds-sheet-badge { display: inline-block; border-radius: 4px; padding: 0.125rem 0.5rem; background: var(--color-course, #7c1fc2); color: #fff; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; } .ds-sheet-badge { flex: none; } .ds-sheet-rows { margin: 0; } .ds-sheet-row { display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); border-top: 2px solid var(--color-ink, #1d1524); } .ds-sheet-row dt { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; border-right: 2px solid var(--color-ink, #1d1524); padding: 1.25rem 1.5rem; color: var(--color-course-deep, #4a0f7a); } .ds-sheet-row dd { margin: 0; padding: 1.25rem 1.5rem; }"
+		}
+	],
+	"narrative": {
+		"northStar": "The Course Map",
+		"overview": "Margincite is drawn as an orienteering map. The website is the terrain. The fixes are a course across it: a start triangle, numbered control rings, and straight purple legs between them. The rest of the page is treated as parts of the same printed sheet: a title block, a margin strip that holds the key, ruled legend tables, a control description sheet, and a north arrow and scale bar at the foot.\n\nThe sheet is white. A small set of flat spot inks is printed on it, and each ink has one job. Headings are tall condensed gothic capitals. Reading text is a plain semi-condensed sans. Rules are solid and 2px wide. Corners are 4px. Nothing has depth. Things sit on top of each other in print order, and lettering that crosses line work gets a white knock-out behind it.\n\nThe look refuses the usual SaaS landing page of gradient hero, product screenshot and three feature cards. It has to be memorable without being playful, because the product asks to be trusted with evidence.\n\nThe same look is planned for the Electron desktop app. That work is not built. Dense tables in the app will need a plain readable face for data. The display capitals are for headings and control numbers only. See the note under Typography.",
+		"keyCharacteristics": [
+			"White sheet, flat spot inks, no gradients and no shadows.",
+			"Course purple carries the course, the main rules, the buttons and the main headings.",
+			"Tall condensed gothic capitals for headings. Plain semi-condensed sans for everything read.",
+			"Solid 2px rules divide the sheet. Corners are 4px.",
+			"Open control rings, a start triangle and a double-ring finish mark the order of things.",
+			"Buttons have one active state: ink and ground swap.",
+			"Every illustrated map or report is labelled as an example."
+		],
+		"rules": [
+			{
+				"name": "The Spot Ink Rule",
+				"body": "Every fill is one flat, solid ink. No gradients. No drop shadows. No translucent fills. No blend modes, including on the course where it crosses terrain.",
+				"section": "colors"
+			},
+			{
+				"name": "The Course Purple Rule",
+				"body": "The course is always plain Course Purple. Legs, rings, the start triangle and control numbers are never tinted, never made translucent, and never drawn in another ink on a map. On the purple field the course symbols swap to white, which is the same inversion buttons use.",
+				"section": "colors"
+			},
+			{
+				"name": "The Screened Line Rule",
+				"body": "Line work may be printed at reduced strength. The build does this in three places: the contour ground behind a section (16 to 30 percent), the magnetic north lines (60 percent) and the trails (80 percent). This applies to thin lines only. It is never a way to lighten a fill, a button, a border or lettering.",
+				"section": "colors"
+			},
+			{
+				"name": "The Map Ink Rule",
+				"body": "Green and blue stay on the map and in key swatches. Do not use them as section grounds, button colours or status colours.",
+				"section": "colors"
+			},
+			{
+				"name": "The No Stretch Rule",
+				"body": "Lettering is never stretched, squeezed or scaled on one axis to fit a box. The box is sized to the lettering. Map tags measure their text and size the box from it. The map itself crops to fill its frame and is never distorted.",
+				"section": "typography"
+			},
+			{
+				"name": "The Capitals Rule",
+				"body": "League Gothic is always capitals at weight 400. It is never faked bold, never set in lower case, and never used for running text.",
+				"section": "typography"
+			},
+			{
+				"name": "The Data Face Note (planned, not built)",
+				"body": "When this look moves to the desktop app, dense tables need a plain readable face for data. Do not set table data in League Gothic. Barlow Semi Condensed with tabular figures is the only reading face the build has. Whether it serves dense tables at small sizes, or a plainer face is added for data, has not been decided.",
+				"section": "typography"
+			},
+			{
+				"name": "The Flat Sheet Rule",
+				"body": "If something needs to stand out from what is behind it, give it a solid white ground and a solid rule. Never a shadow, a blur or a see-through panel.",
+				"section": "elevation"
+			},
+			{
+				"name": "The Knock-Out Rule",
+				"body": "Lettering on the map never has line work running through it. Give it a white box behind, or a white outline around each letter.",
+				"section": "elevation"
+			},
+			{
+				"name": "The Open Ring Rule",
+				"body": "A control is an open ring. It is never filled, so the ground under it stays visible. This holds on the map and wherever a control ring is used as a marker.",
+				"section": "shapes"
+			},
+			{
+				"name": "The Short Leg Rule",
+				"body": "Course legs are straight and stop short of the marks at both ends.",
+				"section": "shapes"
+			},
+			{
+				"name": "The Inversion Rule",
+				"body": "The only active state on a button is a strict swap of ink and ground. No lift, no shadow, no scale, no tint, no darker shade of the same colour.",
+				"section": "components"
+			},
+			{
+				"name": "The Example Label Rule",
+				"body": "The hero map shows an imaginary site. It always carries the example badge and the note that it is an illustration and not a screenshot. Any other illustrated report or interface carries the badge too.",
+				"section": "components"
+			}
+		],
+		"dos": [
+			"Do print every fill as one flat ink from the palette.",
+			"Do keep the course plain Course Purple, with open control rings and straight legs that stop short of each mark.",
+			"Do make the hover state of every button a strict swap of ink and ground, with the border unchanged.",
+			"Do size boxes to their lettering. Measure the text, then draw the box.",
+			"Do label every illustrated map, report or interface with the example badge.",
+			"Do divide content with solid 2px rules and changes of ground.",
+			"Do put a white knock-out or a white halo behind any lettering that sits on the map.",
+			"Do use 4px corners on every box.",
+			"Do set League Gothic in capitals at weight 400 for headings and control numbers only.",
+			"Do keep the skip link, visible focus outlines and reduced-motion handling on every new surface.",
+			"Do use a plain readable face with tabular figures for data when this look moves to the desktop app."
+		],
+		"donts": [
+			"Don't use gradients, drop shadows, glows, blurs or translucent fills.",
+			"Don't put a blend mode on the course, or tint it, or draw it in another ink on a map.",
+			"Don't fill a control ring.",
+			"Don't give a button any active state other than the ink and ground swap. No lift, no scale, no darker shade.",
+			"Don't stretch, squeeze or scale lettering on one axis to fit a box.",
+			"Don't show the hero map, or any illustrated report, without its example label.",
+			"Don't use green or blue outside a map or a key swatch.",
+			"Don't set running text or table data in League Gothic.",
+			"Don't build the SaaS hero of gradient, screenshot and three feature cards. Lists are ruled tables, not cards.",
+			"Don't edit the generated terrain files by hand. Change the script and regenerate.",
+			"Don't lighten a fill, a border or lettering with opacity. Reduced strength is for thin map line work only."
+		]
+	}
+}

@@ -1,0 +1,47 @@
+[package]
+name = "margincite"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-only"
+description = "Margincite backend: site audits, search and AI visibility metrics, and suggestions."
+
+[dependencies]
+anyhow = "1.0.104"
+async-trait = "0.1.92"
+axum = { version = "0.8.9", features = ["macros", "json"] }
+base64 = "0.23.1"
+bytes = "1.12.1"
+chacha20poly1305 = "0.11.0"
+chromiumoxide = "0.9.1"
+ego-tree = "0.11.1"
+futures = "0.3.34"
+quick-xml = { version = "0.42.0", features = ["serialize"] }
+reqwest = { version = "0.13.5", default-features = false, features = ["rustls", "json", "stream", "charset", "http2"] }
+scraper = "0.29.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sqlx = { version = "0.9.0", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "chrono", "json", "migrate", "macros", "time"] }
+sha2 = "0.11.1"
+subtle = "2.6.1"
+texting_robots = "0.2.2"
+thiserror = "2.0.21"
+time = { version = "0.3.55", features = ["serde", "serde-well-known", "formatting", "parsing", "macros"] }
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "signal", "time", "sync", "io-util", "net"] }
+tokio-util = { version = "0.7.20", features = ["rt"] }
+tower = { version = "0.5.3", features = ["util", "limit"] }
+tracing = "0.1.44"
+tracing-subscriber = "0.3.23"
+url = { version = "2.5.8", features = ["serde"] }
+uuid = { version = "1.29.2", features = ["v4", "serde"] }
+
+[dev-dependencies]
+async-trait = "0.1.92"
+axum = { version = "0.8.9", features = ["macros", "json"] }
+reqwest = { version = "0.13.5", default-features = false, features = ["rustls", "json", "stream", "charset", "http2"] }
+serde_json = "1.0.154"
+sqlx = { version = "0.9.0", features = ["runtime-tokio", "tls-rustls", "postgres", "uuid", "chrono", "json", "migrate", "macros", "time"] }
+time = { version = "0.3.55", features = ["formatting", "parsing", "macros"] }
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "net", "time"] }
+tokio-util = { version = "0.7.20", features = ["rt"] }
+uuid = { version = "1.29.2", features = ["v4", "serde"] }
+wiremock = "0.6.5"
