@@ -1,16 +1,12 @@
 import { content } from "../content";
+import { Marker } from "./marks";
 
-/** A map sheet with a ruled margin, and one control circled in that margin. */
-export function Logo({ className }: { className?: string }) {
+/** An evidence marker standing beside the name. */
+export function Logo({ className, onInk = false }: { className?: string; onInk?: boolean }) {
 	return (
-		<span className={"inline-flex items-center gap-2.5 text-course " + (className ?? "")}>
-			<svg viewBox="0 0 40 40" className="h-9 w-9 shrink-0" aria-hidden>
-				<rect x="2.5" y="2.5" width="35" height="35" rx="3" fill="#fff" stroke="currentColor" strokeWidth="3" />
-				<path d="M15 3v34" stroke="currentColor" strokeWidth="2" />
-				<circle cx="9" cy="14" r="3.6" fill="currentColor" />
-				<path d="M20 12h12M20 20h9M20 28h12" stroke="var(--color-contour)" strokeWidth="2.2" strokeLinecap="round" />
-			</svg>
-			<span className="font-[family-name:var(--font-display)] text-[2rem] uppercase leading-none tracking-[0.03em]">
+		<span className={"inline-flex items-center gap-2 " + (onInk ? "text-on-ink " : "text-ink ") + (className ?? "")}>
+			<Marker n="M" className="h-8 w-[2.2rem] shrink-0" />
+			<span className="font-[family-name:var(--font-display)] text-[1rem] font-[850] uppercase max-[374px]:sr-only min-[440px]:text-[1.35rem] leading-none tracking-[0.01em] [font-stretch:118%]">
 				{content.brand}
 			</span>
 		</span>

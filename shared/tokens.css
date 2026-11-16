@@ -1,49 +1,55 @@
-/* Design tokens and base type, shared by landing/ and web/. Imported after tailwindcss. */
-/* Margincite is drawn as an orienteering map. Colours are the map's inks. */
+/* Design tokens and base type for the public pages. Imported after tailwindcss. */
+/* Margincite is set as an evidence room: findings laid on a bench with numbered
+   markers and a measuring scale. Light, because people read it at a desk. */
 @theme {
-	--color-sheet: #ffffff;
-	--color-ink: #1d1524;
-	--color-ink-soft: #4b3f57;
-	--color-course: #7c1fc2;
-	--color-course-deep: #4a0f7a;
-	--color-course-tint: #f3e9fb;
-	--color-course-pale: #e9d5f7;
-	--color-open: #ffc533;
-	--color-open-soft: #ffe08a;
-	--color-thicket: #bfdd8a;
-	--color-fight: #7db94a;
-	--color-marsh: #2e9bdd;
-	--color-contour: #b4652b;
+	--color-bench: #eceeea;
+	--color-bench-deep: #dfe2dc;
+	--color-paper: #ffffff;
+	--color-ink: #121315;
+	--color-ink-soft: #464a50;
+	--color-ink-faint: #6b7076;
+	--color-rule: #c4c8c2;
+	--color-marker: #ffd31a;
+	--color-marker-deep: #d9ad00;
+	--color-seal: #c8231b;
+	--color-on-ink: #f4f5f2;
+	--color-on-ink-soft: #b9bdc2;
 
-	--font-display: "League Gothic", "Arial Narrow", sans-serif;
-	--font-body: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+	--font-display: "Archivo Variable", "Arial", sans-serif;
+	--font-body: "Public Sans", system-ui, sans-serif;
+	--font-mono: "JetBrains Mono", ui-monospace, monospace;
 
 	--ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @layer base {
 	:root {
-		--gutter: clamp(1.25rem, 4vw, 4rem);
+		--gutter: clamp(1rem, 4vw, 4rem);
 	}
 
 	html {
 		scroll-behavior: smooth;
-		scroll-padding-top: 5.5rem;
+		scroll-padding-top: 5rem;
 		-webkit-text-size-adjust: 100%;
-		scrollbar-color: var(--color-course) var(--color-course-tint);
+		scrollbar-color: var(--color-ink) var(--color-bench);
 	}
 
 	body {
 		margin: 0;
-		background: var(--color-sheet);
+		background: var(--color-bench);
 		color: var(--color-ink);
 		font-family: var(--font-body);
-		font-size: 1.1875rem;
-		line-height: 1.5;
+		font-size: 1.0625rem;
+		line-height: 1.6;
 		font-variant-numeric: tabular-nums;
-		caret-color: var(--color-course);
+		caret-color: var(--color-ink);
 		-webkit-font-smoothing: antialiased;
 		text-rendering: optimizeLegibility;
+	}
+
+	::selection {
+		background: var(--color-marker);
+		color: var(--color-ink);
 	}
 
 	h1,
@@ -51,28 +57,8 @@
 	h3 {
 		margin: 0;
 		font-family: var(--font-display);
-		font-weight: 400;
-		text-transform: uppercase;
+		font-weight: 800;
 		text-wrap: balance;
-	}
-
-	h1 {
-		font-size: clamp(3.4rem, 7.2vw, 6rem);
-		line-height: 0.92;
-		letter-spacing: 0.005em;
-		color: var(--color-course);
-	}
-
-	h2 {
-		font-size: clamp(2.9rem, 5.4vw, 4.75rem);
-		line-height: 0.94;
-		letter-spacing: 0.008em;
-	}
-
-	h3 {
-		font-size: clamp(1.75rem, 2.4vw, 2.125rem);
-		line-height: 1;
-		letter-spacing: 0.02em;
 	}
 
 	p {
@@ -83,16 +69,22 @@
 	a {
 		color: inherit;
 		text-underline-offset: 0.22em;
-		text-decoration-thickness: 2px;
+		text-decoration-thickness: 1.5px;
 	}
 
-	::selection {
-		background: var(--color-course);
-		color: #fff;
+	code,
+	pre {
+		font-family: var(--font-mono);
+		font-variant-ligatures: none;
 	}
 
 	:focus-visible {
-		outline: 3px solid var(--color-course);
+		outline: 3px solid var(--color-ink);
 		outline-offset: 3px;
+	}
+
+	/* On ink grounds the outline turns marker yellow so it stays visible. */
+	.bg-ink :focus-visible {
+		outline-color: var(--color-marker);
 	}
 }

@@ -36,7 +36,7 @@ it("escapes characters that would break out of an attribute", () => {
 
 it("describes the organisation, site and app in structured data", () => {
 	const types = buildJsonLd(site).map((entry) => (entry as { "@type": string })["@type"]);
-	expect(types).toEqual(["Organization", "WebSite", "SoftwareApplication"]);
+	expect(types).toEqual(["Organization", "WebSite", "SoftwareApplication", "FAQPage"]);
 });
 
 it("invents no ratings, reviews or prices", () => {
@@ -45,7 +45,7 @@ it("invents no ratings, reviews or prices", () => {
 
 it("embeds structured data that parses and cannot close its script tag", () => {
 	const json = buildHead(site).match(/<script type="application\/ld\+json">(.*?)<\/script>/s)![1];
-	expect(JSON.parse(json)).toHaveLength(3);
+	expect(JSON.parse(json)).toHaveLength(4);
 	expect(json).not.toContain("<");
 });
 
@@ -65,4 +65,17 @@ it("lists the one page in the sitemap", () => {
 	const xml = buildSitemap(site, "2026-11-13");
 	expect(xml).toContain("<loc>https://margincite.com/</loc>");
 	expect(xml).toContain("<lastmod>2026-11-13</lastmod>");
+});
+
+it("says the app is free, open source and where its code lives", () => {
+	const app = buildJsonLd(site)[2] as Record<string, unknown>;
+	expect(app.isAccessibleForFree).toBe(true);
+	expect(app.license).toBe("https://www.gnu.org/licenses/agpl-3.0.html");
+	expect(app.sameAs).toEqual(["https://github.com/Murali03M/margincite"]);
+});
+
+it("answers the page's FAQ in structured data, word for word", () => {
+	const faq = buildJsonLd(site)[3] as { mainEntity: { name: string; acceptedAnswer: { text: string } }[] };
+	expect(faq.mainEntity.map((q) => q.name)).toEqual(content.faq.items.map((item) => item.question));
+	expect(faq.mainEntity.map((q) => q.acceptedAnswer.text)).toEqual(content.faq.items.map((item) => item.answer));
 });

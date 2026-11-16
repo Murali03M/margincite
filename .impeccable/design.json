@@ -1,260 +1,275 @@
 {
 	"schemaVersion": 2,
-	"generatedAt": "2026-11-13T12:32:22.964Z",
+	"generatedAt": "2026-11-16T11:29:07.948Z",
 	"title": "Design System: Margincite",
 	"extensions": {
 		"colorMeta": {
-			"course": {
-				"role": "primary",
-				"displayName": "Course Purple",
-				"canonical": "oklch(48.1% 0.228 304)",
-				"tonalRamp": [
-					"oklch(15% 0.086 304)",
-					"oklch(26% 0.138 304)",
-					"oklch(38% 0.198 304)",
-					"oklch(50% 0.228 304)",
-					"oklch(62% 0.228 304)",
-					"oklch(74% 0.166 304)",
-					"oklch(85% 0.092 304)",
-					"oklch(95% 0.028 304)"
-				]
-			},
-			"course-deep": {
-				"role": "primary",
-				"displayName": "Deep Course Purple",
-				"canonical": "oklch(33.9% 0.162 303)",
-				"tonalRamp": [
-					"oklch(15% 0.086 303)",
-					"oklch(26% 0.138 303)",
-					"oklch(38% 0.162 303)",
-					"oklch(50% 0.162 303)",
-					"oklch(62% 0.162 303)",
-					"oklch(74% 0.162 303)",
-					"oklch(85% 0.090 303)",
-					"oklch(95% 0.028 303)"
-				]
-			},
-			"course-pale": {
-				"role": "primary",
-				"displayName": "Pale Course",
-				"canonical": "oklch(90.0% 0.050 311)",
-				"tonalRamp": [
-					"oklch(15% 0.050 311)",
-					"oklch(26% 0.050 311)",
-					"oklch(38% 0.050 311)",
-					"oklch(50% 0.050 311)",
-					"oklch(62% 0.050 311)",
-					"oklch(74% 0.050 311)",
-					"oklch(85% 0.050 311)",
-					"oklch(95% 0.032 311)"
-				]
-			},
-			"open": {
-				"role": "secondary",
-				"displayName": "Open-Land Yellow",
-				"canonical": "oklch(85.3% 0.162 85)",
-				"tonalRamp": [
-					"oklch(15% 0.036 85)",
-					"oklch(26% 0.054 85)",
-					"oklch(38% 0.078 85)",
-					"oklch(50% 0.102 85)",
-					"oklch(62% 0.126 85)",
-					"oklch(74% 0.150 85)",
-					"oklch(85% 0.162 85)",
-					"oklch(95% 0.052 85)"
-				]
-			},
-			"open-soft": {
-				"role": "tertiary",
-				"displayName": "Rough-Open Yellow",
-				"canonical": "oklch(91.4% 0.111 90)",
-				"tonalRamp": [
-					"oklch(15% 0.037 90)",
-					"oklch(26% 0.055 90)",
-					"oklch(38% 0.077 90)",
-					"oklch(50% 0.101 90)",
-					"oklch(62% 0.111 90)",
-					"oklch(74% 0.111 90)",
-					"oklch(85% 0.111 90)",
-					"oklch(95% 0.063 90)"
-				]
-			},
-			"thicket": {
-				"role": "tertiary",
-				"displayName": "Thicket Green",
-				"canonical": "oklch(85.6% 0.113 125)",
-				"tonalRamp": [
-					"oklch(15% 0.045 125)",
-					"oklch(26% 0.067 125)",
-					"oklch(38% 0.095 125)",
-					"oklch(50% 0.113 125)",
-					"oklch(62% 0.113 125)",
-					"oklch(74% 0.113 125)",
-					"oklch(85% 0.113 125)",
-					"oklch(95% 0.113 125)"
-				]
-			},
-			"fight": {
-				"role": "tertiary",
-				"displayName": "Dense-Thicket Green",
-				"canonical": "oklch(72.1% 0.156 133)",
-				"tonalRamp": [
-					"oklch(15% 0.050 133)",
-					"oklch(26% 0.074 133)",
-					"oklch(38% 0.108 133)",
-					"oklch(50% 0.140 133)",
-					"oklch(62% 0.156 133)",
-					"oklch(74% 0.156 133)",
-					"oklch(85% 0.156 133)",
-					"oklch(95% 0.110 133)"
-				]
-			},
-			"marsh": {
-				"role": "tertiary",
-				"displayName": "Marsh Blue",
-				"canonical": "oklch(66.0% 0.136 241)",
-				"tonalRamp": [
-					"oklch(15% 0.040 241)",
-					"oklch(26% 0.060 241)",
-					"oklch(38% 0.088 241)",
-					"oklch(50% 0.116 241)",
-					"oklch(62% 0.136 241)",
-					"oklch(74% 0.136 241)",
-					"oklch(85% 0.082 241)",
-					"oklch(95% 0.026 241)"
-				]
-			},
-			"contour": {
-				"role": "tertiary",
-				"displayName": "Contour Brown",
-				"canonical": "oklch(58.7% 0.124 53)",
-				"tonalRamp": [
-					"oklch(15% 0.046 53)",
-					"oklch(26% 0.068 53)",
-					"oklch(38% 0.096 53)",
-					"oklch(50% 0.124 53)",
-					"oklch(62% 0.124 53)",
-					"oklch(74% 0.124 53)",
-					"oklch(85% 0.094 53)",
-					"oklch(95% 0.028 53)"
-				]
-			},
-			"sheet": {
+			"bench": {
 				"role": "neutral",
-				"displayName": "Sheet White",
-				"canonical": "oklch(100.0% 0.000 0)",
+				"displayName": "Bench",
+				"canonical": "oklch(94.6% 0.006 129)",
 				"tonalRamp": [
-					"oklch(15% 0.000 0)",
-					"oklch(26% 0.000 0)",
-					"oklch(38% 0.000 0)",
-					"oklch(50% 0.000 0)",
-					"oklch(62% 0.000 0)",
-					"oklch(74% 0.000 0)",
-					"oklch(85% 0.000 0)",
-					"oklch(95% 0.000 0)"
+					"oklch(15% 0.002 129)",
+					"oklch(26% 0.002 129)",
+					"oklch(38% 0.002 129)",
+					"oklch(50% 0.003 129)",
+					"oklch(62% 0.004 129)",
+					"oklch(74% 0.005 129)",
+					"oklch(85% 0.005 129)",
+					"oklch(95% 0.006 129)"
+				]
+			},
+			"bench-deep": {
+				"role": "neutral",
+				"displayName": "Bench Deep",
+				"canonical": "oklch(90.9% 0.009 129)",
+				"tonalRamp": [
+					"oklch(15% 0.003 129)",
+					"oklch(26% 0.003 129)",
+					"oklch(38% 0.004 129)",
+					"oklch(50% 0.005 129)",
+					"oklch(62% 0.006 129)",
+					"oklch(74% 0.007 129)",
+					"oklch(85% 0.008 129)",
+					"oklch(95% 0.005 129)"
+				]
+			},
+			"paper": {
+				"role": "neutral",
+				"displayName": "Paper",
+				"canonical": "oklch(100.0% 0.000 90)",
+				"tonalRamp": [
+					"oklch(15% 0.000 90)",
+					"oklch(26% 0.000 90)",
+					"oklch(38% 0.000 90)",
+					"oklch(50% 0.000 90)",
+					"oklch(62% 0.000 90)",
+					"oklch(74% 0.000 90)",
+					"oklch(85% 0.000 90)",
+					"oklch(95% 0.000 90)"
 				]
 			},
 			"ink": {
 				"role": "neutral",
-				"displayName": "Map Black",
-				"canonical": "oklch(21.3% 0.031 308)",
+				"displayName": "Evidence Ink",
+				"canonical": "oklch(18.6% 0.004 264)",
 				"tonalRamp": [
-					"oklch(15% 0.031 308)",
-					"oklch(26% 0.031 308)",
-					"oklch(38% 0.031 308)",
-					"oklch(50% 0.031 308)",
-					"oklch(62% 0.031 308)",
-					"oklch(74% 0.031 308)",
-					"oklch(85% 0.031 308)",
-					"oklch(95% 0.031 308)"
+					"oklch(15% 0.003 264)",
+					"oklch(26% 0.004 264)",
+					"oklch(38% 0.003 264)",
+					"oklch(50% 0.002 264)",
+					"oklch(62% 0.002 264)",
+					"oklch(74% 0.001 264)",
+					"oklch(85% 0.001 264)",
+					"oklch(95% 0.001 264)"
 				]
 			},
 			"ink-soft": {
 				"role": "neutral",
-				"displayName": "Soft Black",
-				"canonical": "oklch(39.0% 0.043 307)",
+				"displayName": "Ink Soft",
+				"canonical": "oklch(40.8% 0.011 258)",
 				"tonalRamp": [
-					"oklch(15% 0.043 307)",
-					"oklch(26% 0.043 307)",
-					"oklch(38% 0.043 307)",
-					"oklch(50% 0.043 307)",
-					"oklch(62% 0.043 307)",
-					"oklch(74% 0.043 307)",
-					"oklch(85% 0.043 307)",
-					"oklch(95% 0.031 307)"
+					"oklch(15% 0.004 258)",
+					"oklch(26% 0.007 258)",
+					"oklch(38% 0.010 258)",
+					"oklch(50% 0.009 258)",
+					"oklch(62% 0.007 258)",
+					"oklch(74% 0.005 258)",
+					"oklch(85% 0.003 258)",
+					"oklch(95% 0.003 258)"
+				]
+			},
+			"ink-faint": {
+				"role": "neutral",
+				"displayName": "Ink Faint",
+				"canonical": "oklch(54.3% 0.011 253)",
+				"tonalRamp": [
+					"oklch(15% 0.003 253)",
+					"oklch(26% 0.005 253)",
+					"oklch(38% 0.008 253)",
+					"oklch(50% 0.010 253)",
+					"oklch(62% 0.009 253)",
+					"oklch(74% 0.006 253)",
+					"oklch(85% 0.004 253)",
+					"oklch(95% 0.003 253)"
+				]
+			},
+			"rule": {
+				"role": "neutral",
+				"displayName": "Rule Grey",
+				"canonical": "oklch(82.8% 0.009 135)",
+				"tonalRamp": [
+					"oklch(15% 0.003 135)",
+					"oklch(26% 0.003 135)",
+					"oklch(38% 0.004 135)",
+					"oklch(50% 0.005 135)",
+					"oklch(62% 0.007 135)",
+					"oklch(74% 0.008 135)",
+					"oklch(85% 0.008 135)",
+					"oklch(95% 0.003 135)"
+				]
+			},
+			"marker": {
+				"role": "primary",
+				"displayName": "Marker Yellow",
+				"canonical": "oklch(87.9% 0.176 93)",
+				"tonalRamp": [
+					"oklch(15% 0.053 93)",
+					"oklch(26% 0.053 93)",
+					"oklch(38% 0.076 93)",
+					"oklch(50% 0.100 93)",
+					"oklch(62% 0.124 93)",
+					"oklch(74% 0.148 93)",
+					"oklch(85% 0.170 93)",
+					"oklch(95% 0.073 93)"
+				]
+			},
+			"marker-deep": {
+				"role": "primary",
+				"displayName": "Marker Shade",
+				"canonical": "oklch(76.6% 0.156 90)",
+				"tonalRamp": [
+					"oklch(15% 0.047 90)",
+					"oklch(26% 0.053 90)",
+					"oklch(38% 0.077 90)",
+					"oklch(50% 0.102 90)",
+					"oklch(62% 0.126 90)",
+					"oklch(74% 0.151 90)",
+					"oklch(85% 0.100 90)",
+					"oklch(95% 0.039 90)"
+				]
+			},
+			"seal": {
+				"role": "secondary",
+				"displayName": "Seal Red",
+				"canonical": "oklch(53.8% 0.200 29)",
+				"tonalRamp": [
+					"oklch(15% 0.060 29)",
+					"oklch(26% 0.097 29)",
+					"oklch(38% 0.141 29)",
+					"oklch(50% 0.186 29)",
+					"oklch(62% 0.165 29)",
+					"oklch(74% 0.113 29)",
+					"oklch(85% 0.065 29)",
+					"oklch(95% 0.050 29)"
+				]
+			},
+			"on-ink": {
+				"role": "neutral",
+				"displayName": "On-Ink",
+				"canonical": "oklch(96.9% 0.004 122)",
+				"tonalRamp": [
+					"oklch(15% 0.001 122)",
+					"oklch(26% 0.001 122)",
+					"oklch(38% 0.002 122)",
+					"oklch(50% 0.002 122)",
+					"oklch(62% 0.003 122)",
+					"oklch(74% 0.003 122)",
+					"oklch(85% 0.004 122)",
+					"oklch(95% 0.004 122)"
+				]
+			},
+			"on-ink-soft": {
+				"role": "neutral",
+				"displayName": "On-Ink Soft",
+				"canonical": "oklch(79.7% 0.008 254)",
+				"tonalRamp": [
+					"oklch(15% 0.002 254)",
+					"oklch(26% 0.003 254)",
+					"oklch(38% 0.004 254)",
+					"oklch(50% 0.005 254)",
+					"oklch(62% 0.006 254)",
+					"oklch(74% 0.007 254)",
+					"oklch(85% 0.006 254)",
+					"oklch(95% 0.002 254)"
 				]
 			}
 		},
 		"typographyMeta": {
 			"display": {
 				"displayName": "Display",
-				"purpose": "The one page heading. Course purple capitals, with the key word in map black."
+				"purpose": "The one hero headline. Archivo 850 at 125% width; its key words sit on a marker-yellow band."
 			},
 			"headline": {
 				"displayName": "Headline",
-				"purpose": "Section headings, in capitals."
+				"purpose": "Section headings. Archivo 850 at 125% width."
 			},
 			"title": {
 				"displayName": "Title",
-				"purpose": "Item headings inside a section, in capitals. Always map black."
+				"purpose": "Row and item headings in logs, FAQ questions, the finding-sheet title. 1.5rem for the How it works steps."
 			},
 			"lead": {
 				"displayName": "Lead",
-				"purpose": "The paragraph directly under a heading."
+				"purpose": "The paragraph under a heading, in Ink Soft, held to a 38rem measure."
 			},
 			"body": {
 				"displayName": "Body",
-				"purpose": "All other reading text. Tabular figures."
+				"purpose": "All running text, with tabular figures."
 			},
-			"caption": {
-				"displayName": "Caption",
-				"purpose": "The map note, key entries and the copyright line."
+			"small": {
+				"displayName": "Small",
+				"purpose": "Status lines, the Needs column, the costs note, footer copy."
 			},
 			"label": {
 				"displayName": "Label",
-				"purpose": "Map lettering in spaced capitals: nav links, row labels, the sheet caption, badges."
+				"purpose": "Every small uppercase word: nav links, table headers, badges, stamps, exhibit-tag names, the hero strip."
 			},
 			"button": {
 				"displayName": "Button",
-				"purpose": "Button lettering in spaced capitals."
+				"purpose": "Button lettering, uppercase."
+			},
+			"mono": {
+				"displayName": "Mono",
+				"purpose": "Files, robots.txt lines, commands, counts, recorded values, SEO/AIO/GEO tags. Ligatures off."
 			}
 		},
-		"shadows": [],
+		"shadows": [
+			{
+				"name": "paper-on-bench",
+				"value": "0 1px 2px rgb(18 19 21 / 0.12), 0 14px 28px -10px rgb(18 19 21 / 0.28)",
+				"purpose": "The only shadow. Every paper sheet laid on the bench: exhibit document and tag, sample list, finding sheet, terminal."
+			}
+		],
 		"motion": [
 			{
 				"name": "ease-out-expo",
 				"value": "cubic-bezier(0.16, 1, 0.3, 1)",
-				"purpose": "The one easing curve. Used for every transition and for the course drawing."
+				"purpose": "The one easing curve, for every transition and the signature sequence."
 			},
 			{
 				"name": "state-swap",
-				"value": "140ms",
-				"purpose": "Button ink and ground swap, and nav link colour change."
+				"value": "160ms",
+				"purpose": "Button ground and lettering swap to marker yellow; nav link colour."
 			},
 			{
-				"name": "course-leg",
-				"value": "620ms",
-				"purpose": "Each course leg is drawn along its length, once, on load."
+				"name": "set-marker",
+				"value": "560ms, delay step * 180ms + 200ms",
+				"purpose": "Markers 1, 2, 3 set down on the exhibit: fade in from 14px above."
 			},
 			{
-				"name": "course-mark",
-				"value": "520ms",
-				"purpose": "Each control ring and number appears, scaling from 1.5 to 1."
+				"name": "lay-ruler-vertical",
+				"value": "700ms, delay 820ms",
+				"purpose": "Vertical scale leg drawn upward from the corner (clip-path reveal)."
 			},
 			{
-				"name": "course-tag",
-				"value": "520ms",
-				"purpose": "Each tag slides in 10px from the left, 130ms after its control."
+				"name": "lay-ruler-horizontal",
+				"value": "700ms, delay 1070ms",
+				"purpose": "Horizontal scale leg drawn left to right (clip-path reveal)."
 			},
 			{
-				"name": "course-step",
-				"value": "260ms",
-				"purpose": "Delay between one course step and the next. The first step starts at 250ms."
+				"name": "place-tag",
+				"value": "620ms, delay 1300ms",
+				"purpose": "Exhibit tag placed: fade, 12px rise, 3px blur to sharp."
+			},
+			{
+				"name": "digit-wheel",
+				"value": "900ms, delay place * 70ms",
+				"purpose": "Visit-count digit wheels roll once to their value when the count arrives."
 			},
 			{
 				"name": "reduced-motion",
 				"value": "0.001ms",
-				"purpose": "With reduced motion set, every animation and transition is cut to nothing and smooth scrolling is off."
+				"purpose": "Under prefers-reduced-motion: reduce, every animation and transition is cut to near zero and smooth scroll is off."
 			}
 		],
 		"breakpoints": [
@@ -269,10 +284,6 @@
 			{
 				"name": "lg",
 				"value": "64rem"
-			},
-			{
-				"name": "xl",
-				"value": "80rem"
 			}
 		]
 	},
@@ -281,186 +292,136 @@
 			"name": "Primary Button",
 			"kind": "button",
 			"refersTo": "button-primary",
-			"description": "The main action. Course purple ground, white lettering. Hover swaps ink and ground.",
-			"html": "<a href=\"#\" class=\"ds-btn-primary\">Request early access <svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
-			"css": ".ds-btn-primary { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary { border: 2px solid var(--color-course, #7c1fc2); background: var(--color-course, #7c1fc2); color: #fff; } .ds-btn-primary:hover { background: #fff; color: var(--color-course, #7c1fc2); } .ds-btn-primary:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+			"description": "The main action: an ink plate with wide label lettering. Hover lays marker yellow under the words.",
+			"html": "<a href=\"#\" class=\"ds-btn ds-btn-primary\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"/></svg>Get it on GitHub<svg viewBox=\"0 0 20 20\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M3 10h13M11 5l5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+			"css": ".ds-btn { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.65rem; border: 2px solid var(--color-ink, #121315); border-radius: 3px; padding: 0.6rem 1.3rem; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.9375rem; font-weight: 750; letter-spacing: 0.06em; line-height: 1.1; text-decoration: none; text-transform: uppercase; cursor: pointer; transition: background-color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn:focus-visible { outline: 3px solid var(--color-ink, #121315); outline-offset: 3px; } .ds-btn-primary { background: var(--color-ink, #121315); color: var(--color-on-ink, #f4f5f2); } .ds-btn-primary:hover { background: var(--color-marker, #ffd31a); color: var(--color-ink, #121315); }"
 		},
 		{
 			"name": "Line Button",
 			"kind": "button",
 			"refersTo": "button-line",
-			"description": "The second action. White ground, purple lettering and border. Hover swaps ink and ground.",
-			"html": "<a href=\"#\" class=\"ds-btn-line\">See how it works</a>",
-			"css": ".ds-btn-line { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-line { border: 2px solid var(--color-course, #7c1fc2); background: #fff; color: var(--color-course, #7c1fc2); } .ds-btn-line:hover { background: var(--color-course, #7c1fc2); color: #fff; } .ds-btn-line:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+			"description": "The secondary action: transparent ground, ink border and lettering, same marker hover.",
+			"html": "<a href=\"#\" class=\"ds-btn ds-btn-line\">See how it works</a>",
+			"css": ".ds-btn { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.65rem; border: 2px solid var(--color-ink, #121315); border-radius: 3px; padding: 0.6rem 1.3rem; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.9375rem; font-weight: 750; letter-spacing: 0.06em; line-height: 1.1; text-decoration: none; text-transform: uppercase; cursor: pointer; transition: background-color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn:focus-visible { outline: 3px solid var(--color-ink, #121315); outline-offset: 3px; } .ds-btn-line { background: transparent; color: var(--color-ink, #121315); } .ds-btn-line:hover { background: var(--color-marker, #ffd31a); color: var(--color-ink, #121315); }"
 		},
 		{
-			"name": "Button on the Purple Field",
-			"kind": "button",
-			"refersTo": "button-on-course",
-			"description": "The button used on a course purple ground. White with deep purple lettering. Hover swaps them.",
-			"html": "<div class=\"ds-on-course\"><button type=\"button\" class=\"ds-btn-on-course\">Request early access</button></div>",
-			"css": ".ds-on-course { padding: 1.5rem; background: var(--color-course, #7c1fc2); } .ds-btn-on-course { display: inline-flex; min-height: 3.25rem; align-items: center; justify-content: center; gap: 0.6rem; border-radius: 4px; padding: 0.55rem 1.35rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.0625rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.1; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color 140ms cubic-bezier(0.16, 1, 0.3, 1), color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-on-course { border: 2px solid #fff; background: #fff; color: var(--color-course-deep, #4a0f7a); } .ds-btn-on-course:hover { background: var(--color-course-deep, #4a0f7a); color: #fff; } .ds-btn-on-course:focus-visible { outline: 3px solid var(--color-open, #ffc533); outline-offset: 3px; }"
-		},
-		{
-			"name": "Email Field",
-			"kind": "input",
-			"refersTo": "field",
-			"description": "The one field in the build. It sits on the purple field. Focus and invalid states use open-land yellow.",
-			"html": "<div class=\"ds-field-ground\"><input class=\"ds-field\" type=\"email\" placeholder=\"you@yourcompany.com\" aria-label=\"Email address\"><p class=\"ds-field-error\">That email address does not look right.</p></div>",
-			"css": ".ds-field-ground { padding: 1.5rem; background: var(--color-course, #7c1fc2); } .ds-field { min-height: 3.25rem; width: 100%; box-sizing: border-box; border: 2px solid #fff; border-radius: 4px; padding: 0.55rem 1rem; background: #fff; color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.125rem; } .ds-field:focus-visible { outline: 3px solid var(--color-open, #ffc533); outline-offset: 2px; } .ds-field[aria-invalid=\"true\"] { border-color: var(--color-open, #ffc533); } .ds-field-error { margin: 1rem 0 0; border-radius: 4px; padding: 0.625rem 1rem; background: var(--color-open, #ffc533); color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; font-weight: 600; }"
-		},
-		{
-			"name": "Nav Bar",
+			"name": "Navigation Bar",
 			"kind": "nav",
 			"refersTo": "nav-bar",
-			"description": "White bar with a 2px course purple rule under it. Links are map lettering and turn purple with an underline on hover.",
-			"html": "<nav class=\"ds-nav\" aria-label=\"Main\"><span class=\"ds-nav-brand\">Margincite</span><a href=\"#\" class=\"ds-nav-link\">Features</a><a href=\"#\" class=\"ds-nav-link\">How it works</a><a href=\"#\" class=\"ds-nav-link\">A closer look</a></nav>",
-			"css": ".ds-nav { display: flex; height: 4.5rem; align-items: center; gap: 2.25rem; border-bottom: 2px solid var(--color-course, #7c1fc2); padding: 0 1.25rem; background: #fff; } .ds-nav-brand { margin-right: auto; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: 2rem; line-height: 1; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-course, #7c1fc2); } .ds-nav-link { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; color: var(--color-ink, #1d1524); text-decoration: none; text-underline-offset: 0.22em; text-decoration-thickness: 2px; transition: color 140ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav-link:hover { color: var(--color-course, #7c1fc2); text-decoration: underline; } .ds-nav-link:focus-visible { outline: 3px solid var(--color-course, #7c1fc2); outline-offset: 3px; }"
+			"description": "Sticky paper bar, 4rem, 1px ink rule; marker wordmark, label links, visit stamp, compact GitHub button.",
+			"html": "<header class=\"ds-nav\"><span class=\"ds-nav-brand\"><svg viewBox=\"0 0 48 44\" width=\"35\" height=\"32\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">M</text></svg><span>Margincite</span></span><nav class=\"ds-nav-links\"><a href=\"#\">Features</a><a href=\"#\">How it works</a><a href=\"#\">FAQ</a></nav><a href=\"#\" class=\"ds-nav-cta\"><svg viewBox=\"0 0 16 16\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z\"/></svg>Get it on GitHub</a></header>",
+			"css": ".ds-nav { display: flex; height: 4rem; align-items: center; justify-content: space-between; gap: 1rem; padding: 0 1.5rem; background: var(--color-paper, #ffffff); color: var(--color-ink, #121315); border-bottom: 1px solid var(--color-ink, #121315); } .ds-nav-brand { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 118%; font-weight: 850; font-size: 1.35rem; text-transform: uppercase; line-height: 1; } .ds-nav-links { display: flex; gap: 2rem; } .ds-nav-links a { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; font-size: 0.8125rem; color: inherit; text-decoration: none; } .ds-nav-links a:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.35em; } .ds-nav-links a:focus-visible { outline: 3px solid var(--color-ink, #121315); outline-offset: 3px; } .ds-nav-cta { display: inline-flex; min-height: 2.6rem; align-items: center; gap: 0.65rem; border: 2px solid var(--color-ink, #121315); border-radius: 3px; padding: 0.45rem 0.95rem; background: var(--color-ink, #121315); color: var(--color-on-ink, #f4f5f2); font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; transition: background-color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)), color 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav-cta:hover { background: var(--color-marker, #ffd31a); color: var(--color-ink, #121315); } .ds-nav-cta:focus-visible { outline: 3px solid var(--color-ink, #121315); outline-offset: 3px; }"
+		},
+		{
+			"name": "Serves Tags and Cost Stamps",
+			"kind": "chip",
+			"refersTo": "serves-tag",
+			"description": "Mono SEO/AIO/GEO tags with a 1.5px ink border, and rubber cost stamps rotated -2deg; Paid is seal red.",
+			"html": "<div class=\"ds-chips\"><span class=\"ds-tag\">SEO</span><span class=\"ds-tag\">AIO</span><span class=\"ds-tag\">GEO</span><span class=\"ds-stamp\">Free</span><span class=\"ds-stamp\">Your key</span><span class=\"ds-stamp ds-stamp-paid\">Paid</span></div>",
+			"css": ".ds-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem 0.75rem; } .ds-tag { border: 1.5px solid var(--color-ink, #121315); border-radius: 2px; padding: 1px 0.375rem; font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.75rem; font-weight: 700; line-height: 1.35; color: var(--color-ink, #121315); } .ds-stamp { display: inline-block; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; font-size: 0.6875rem; border: 2px solid currentColor; border-radius: 3px; padding: 0.15rem 0.45rem; rotate: -2deg; color: var(--color-ink, #121315); } .ds-stamp-paid { color: var(--color-seal, #c8231b); }"
 		},
 		{
 			"name": "Example Badge",
 			"kind": "chip",
-			"refersTo": "example-badge",
-			"description": "Marks an illustrated map, report or interface as an example.",
-			"html": "<span class=\"ds-badge\">Example report</span>",
-			"css": ".ds-badge { display: inline-block; border-radius: 4px; padding: 0.125rem 0.5rem; background: var(--color-course, #7c1fc2); color: #fff; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; }"
+			"refersTo": "badge-example",
+			"description": "Marker-yellow label lettering on an ink plate. Every illustrated finding carries it.",
+			"html": "<span class=\"ds-badge\">Example</span>",
+			"css": ".ds-badge { display: inline-block; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; background: var(--color-ink, #121315); color: var(--color-marker, #ffd31a); border-radius: 3px; padding: 0.25rem 0.5rem; }"
 		},
 		{
-			"name": "Title Block",
+			"name": "Paper Sheet (Finding)",
 			"kind": "card",
-			"refersTo": "title-block",
-			"description": "The ruled white panel that carries the page heading over the map, from 80rem wide.",
-			"html": "<div class=\"ds-title-block\"><h1 class=\"ds-title-block-h\">Notes in the <span>margin</span> for your website</h1><p class=\"ds-title-block-lead\">Margincite reads every page of your site and hands back a ranked list of fixes.</p></div>",
-			"css": ".ds-title-block { width: clamp(23rem, 31vw, 31rem); max-width: 100%; box-sizing: border-box; border: 2px solid var(--color-course, #7c1fc2); border-radius: 4px; padding: clamp(1.25rem, 2vw, 2.25rem); background: #fff; } .ds-title-block-h { margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(3.9rem, 5.6vw, 5.5rem); font-weight: 400; line-height: 0.92; letter-spacing: 0.005em; text-transform: uppercase; color: var(--color-course, #7c1fc2); } .ds-title-block-h span { color: var(--color-ink, #1d1524); } .ds-title-block-lead { margin: 1.5rem 0 0; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.42; color: var(--color-ink, #1d1524); }"
+			"refersTo": "paper-sheet",
+			"description": "Paper laid on the bench with the one shadow: a header strip over a 2px ink rule, then a ruled log of label and value rows.",
+			"html": "<div class=\"ds-bench\"><article class=\"ds-sheet\"><div class=\"ds-sheet-head\"><svg viewBox=\"0 0 48 44\" width=\"48\" height=\"44\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">1</text></svg><h3>AI crawlers are blocked in robots.txt</h3><span class=\"ds-sheet-badge\">Example</span></div><dl><div><dt>What we found</dt><dd>robots.txt disallows GPTBot, ClaudeBot and PerplexityBot on every page.</dd></div><div><dt>How to fix it</dt><dd>Remove the three Disallow rules.</dd></div></dl></article></div>",
+			"css": ".ds-bench { background: var(--color-bench, #eceeea); padding: 1.5rem; } .ds-sheet { background: var(--color-paper, #ffffff); color: var(--color-ink, #121315); border: 2px solid var(--color-ink, #121315); border-radius: 3px; box-shadow: 0 1px 2px rgb(18 19 21 / 0.12), 0 14px 28px -10px rgb(18 19 21 / 0.28); font-family: var(--font-body, \"Public Sans\", system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.6; } .ds-sheet-head { display: flex; align-items: center; gap: 1rem; padding: 1rem 1.5rem; border-bottom: 2px solid var(--color-ink, #121315); } .ds-sheet-head h3 { flex: 1; margin: 0; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-size: 1.3125rem; font-weight: 750; line-height: 1.15; letter-spacing: -0.005em; } .ds-sheet-badge { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; background: var(--color-ink, #121315); color: var(--color-marker, #ffd31a); border-radius: 3px; padding: 0.25rem 0.5rem; } .ds-sheet dl { margin: 0; } .ds-sheet dl > div { display: grid; grid-template-columns: 10rem 1fr; gap: 1.5rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--color-rule, #c4c8c2); } .ds-sheet dl > div:last-child { border-bottom: 0; } .ds-sheet dt { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; padding-top: 0.25rem; color: var(--color-ink-soft, #464a50); } .ds-sheet dd { margin: 0; }"
 		},
 		{
-			"name": "Control and Tag",
+			"name": "Exhibit (markers, scale, tag)",
 			"kind": "custom",
-			"refersTo": "map-tag",
-			"description": "A course control on the map: an open purple ring, its number outside the ring, a straight leg that stops short, and a tag sized to its lettering.",
-			"html": "<svg class=\"ds-control\" viewBox=\"0 0 420 130\" role=\"img\" aria-label=\"Control 1: AI crawlers blocked in robots.txt\"><line x1=\"14\" y1=\"122\" x2=\"50\" y2=\"88\" fill=\"none\" stroke-width=\"6\" stroke-linecap=\"round\" class=\"ds-control-ink\"/><circle cx=\"72\" cy=\"66\" r=\"31\" fill=\"none\" stroke-width=\"6\" class=\"ds-control-ink\"/><text x=\"29\" y=\"49\" text-anchor=\"end\" font-size=\"69\" class=\"ds-control-number\">1</text><rect x=\"119\" y=\"44.5\" width=\"287\" height=\"43\" rx=\"4\" fill=\"#fff\" stroke-width=\"2.5\" class=\"ds-control-ink\"/><text x=\"262.5\" y=\"73.4\" text-anchor=\"middle\" font-size=\"21\" font-weight=\"600\" class=\"ds-control-tag\">AI crawlers blocked in robots.txt</text></svg>",
-			"css": ".ds-control { display: block; width: 100%; max-width: 26rem; height: auto; } .ds-control-ink { stroke: var(--color-course, #7c1fc2); } .ds-control-number { font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); fill: var(--color-course, #7c1fc2); stroke: #fff; stroke-width: 9; stroke-linejoin: round; paint-order: stroke; } .ds-control-tag { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); fill: var(--color-ink, #1d1524); }"
+			"refersTo": "exhibit-bench",
+			"description": "The signature: a file on paper on the deep bench, numbered markers on the found lines, an L-shaped forensic scale, and the exhibit label. Lines in seal red mark what was found.",
+			"html": "<div class=\"ds-exhibit\"><div class=\"ds-ex-grid\"><div class=\"ds-ruler ds-ruler-v\"></div><div class=\"ds-doc\"><div class=\"ds-doc-head\"><span>example.com/robots.txt</span><span class=\"ds-doc-label\">Evidence</span></div><ol><li><i>1</i><span>User-agent: GPTBot</span></li><li><i>2</i><span class=\"ds-found\">Disallow: /</span><svg viewBox=\"0 0 48 44\" width=\"40\" height=\"36\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">1</text></svg></li><li><i>3</i><span>User-agent: ClaudeBot</span></li><li><i>4</i><span class=\"ds-found\">Disallow: /</span><svg viewBox=\"0 0 48 44\" width=\"40\" height=\"36\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">2</text></svg></li></ol></div><div></div><div class=\"ds-ruler\"></div></div><div class=\"ds-tag-card\"><div class=\"ds-tag-title\">Exhibit 1 of 17</div><dl><div><dt>Found</dt><dd>3 AI crawlers blocked</dd></div><div><dt>Fix</dt><dd>Remove 3 Disallow rules</dd></div></dl></div></div>",
+			"css": ".ds-exhibit { background: var(--color-bench-deep, #dfe2dc); border-radius: 4px; padding: 1.5rem; } .ds-ex-grid { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); grid-template-rows: 1fr 1.5rem; gap: 0.5rem; } .ds-ruler { --unit: 1.25rem; height: 1.5rem; border: 1.5px solid var(--color-ink, #121315); background: repeating-linear-gradient(90deg, var(--color-ink, #121315) 0 1px, transparent 1px calc(var(--unit) / 5)) left bottom / 100% 35% no-repeat, repeating-linear-gradient(90deg, var(--color-ink, #121315) 0 var(--unit), var(--color-paper, #ffffff) var(--unit) calc(var(--unit) * 2)) left top / 100% 45% no-repeat, var(--color-paper, #ffffff); } .ds-ruler-v { width: 1.5rem; height: auto; background: repeating-linear-gradient(180deg, var(--color-ink, #121315) 0 1px, transparent 1px calc(var(--unit) / 5)) right top / 35% 100% no-repeat, repeating-linear-gradient(180deg, var(--color-ink, #121315) 0 var(--unit), var(--color-paper, #ffffff) var(--unit) calc(var(--unit) * 2)) left top / 45% 100% no-repeat, var(--color-paper, #ffffff); } .ds-doc { background: var(--color-paper, #ffffff); border-radius: 3px; box-shadow: 0 1px 2px rgb(18 19 21 / 0.12), 0 14px 28px -10px rgb(18 19 21 / 0.28); font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.9375rem; } .ds-doc-head { display: flex; justify-content: space-between; padding: 0.625rem 1rem; border-bottom: 1px solid var(--color-rule, #c4c8c2); font-size: 0.8125rem; color: var(--color-ink-soft, #464a50); } .ds-doc-label { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; color: var(--color-ink-faint, #6b7076); } .ds-doc ol { list-style: none; margin: 0; padding: 0.5rem 0; } .ds-doc li { display: flex; align-items: center; gap: 1rem; min-height: 2.15rem; padding: 0 1rem; } .ds-doc li i { font-style: normal; width: 1.25rem; text-align: right; color: var(--color-ink-faint, #6b7076); } .ds-doc li svg { margin-left: auto; } .ds-found { font-weight: 700; color: var(--color-seal, #c8231b); } .ds-tag-card { margin-top: 1rem; max-width: 19rem; background: var(--color-paper, #ffffff); border: 1.5px solid var(--color-ink, #121315); border-radius: 3px; overflow: hidden; box-shadow: 0 1px 2px rgb(18 19 21 / 0.12), 0 14px 28px -10px rgb(18 19 21 / 0.28); } .ds-tag-title { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; background: var(--color-ink, #121315); color: var(--color-marker, #ffd31a); padding: 0.5rem 0.75rem; } .ds-tag-card dl { margin: 0; } .ds-tag-card dl > div { display: grid; grid-template-columns: 4.25rem 1fr; gap: 0.75rem; padding: 0.5rem 0.75rem; border-top: 1px solid var(--color-rule, #c4c8c2); } .ds-tag-card dl > div:first-child { border-top: 0; } .ds-tag-card dt { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; padding-top: 0.2rem; color: var(--color-ink-faint, #6b7076); } .ds-tag-card dd { margin: 0; font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.8125rem; font-weight: 700; color: var(--color-ink, #121315); }"
 		},
 		{
-			"name": "Legend Row",
+			"name": "Visit Stamp",
 			"kind": "custom",
-			"description": "One row of the legend table that lists features: a map symbol, then what it means. Rows are divided by 2px black rules.",
-			"html": "<ul class=\"ds-legend\"><li class=\"ds-legend-row\"><svg viewBox=\"0 0 48 30\" aria-hidden=\"true\" class=\"ds-legend-symbol\"><g fill=\"none\" stroke-linecap=\"round\"><path d=\"M2 24C10 8 22 4 30 9s12 9 16 5\" stroke-width=\"2.6\"/><path d=\"M2 29C12 16 22 12 29 16s11 8 17 5\" stroke-width=\"1.4\"/><path d=\"M6 13C13 4 22 1 31 3\" stroke-width=\"1.4\"/></g></svg><div><h3 class=\"ds-legend-title\">Reads the whole site</h3><p class=\"ds-legend-body\">Follows your sitemap and links page by page.</p></div></li></ul>",
-			"css": ".ds-legend { margin: 0; padding: 0; list-style: none; border-bottom: 2px solid var(--color-ink, #1d1524); } .ds-legend-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); align-items: start; column-gap: 2rem; border-top: 2px solid var(--color-ink, #1d1524); padding: 1.75rem 0; } .ds-legend-symbol { width: 100%; height: auto; margin-top: 0.25rem; stroke: var(--color-contour, #b4652b); } .ds-legend-title { margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(1.75rem, 2.4vw, 2.125rem); font-weight: 400; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; color: var(--color-ink, #1d1524); } .ds-legend-body { margin: 0.625rem 0 0; max-width: 38rem; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.5; color: var(--color-ink-soft, #4b3f57); }"
+			"refersTo": "visit-stamp",
+			"description": "A numbering stamp in the top bar: six mono digit wheels under a tiny Visits label, rotated -2deg; the wheels roll once on arrival.",
+			"html": "<span class=\"ds-visits\"><span class=\"ds-visits-label\">Visits</span><span class=\"ds-visits-digits\">001234</span></span>",
+			"css": ".ds-visits { display: inline-flex; flex-direction: column; align-items: center; rotate: -2deg; border: 2px solid var(--color-ink, #121315); border-radius: 3px; padding: 0.2rem 0.375rem 0.125rem; color: var(--color-ink, #121315); } .ds-visits-label { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; font-size: 0.625rem; letter-spacing: 0.16em; line-height: 1; } .ds-visits-digits { font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.02em; }"
 		},
 		{
-			"name": "Control Description Sheet",
-			"kind": "card",
-			"refersTo": "description-sheet",
-			"description": "One suggestion in detail: a ruled white sheet with a numbered control ring, a title, the example badge and labelled rows.",
-			"html": "<article class=\"ds-sheet\"><header class=\"ds-sheet-head\"><span class=\"ds-sheet-ring\"><svg viewBox=\"0 0 64 64\" width=\"56\" height=\"56\" aria-hidden=\"true\"><circle cx=\"32\" cy=\"32\" r=\"25\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"5\"/><text x=\"32\" y=\"43\" text-anchor=\"middle\" font-size=\"32\" fill=\"currentColor\">1</text></svg></span><h3 class=\"ds-sheet-title\">AI crawlers are blocked in robots.txt</h3><span class=\"ds-sheet-badge\">Example</span></header><dl class=\"ds-sheet-rows\"><div class=\"ds-sheet-row\"><dt>What we found</dt><dd>robots.txt disallows GPTBot, ClaudeBot and PerplexityBot on every page.</dd></div><div class=\"ds-sheet-row\"><dt>How to fix it</dt><dd>Remove the three Disallow rules, or allow the sections you want read.</dd></div></dl></article>",
-			"css": ".ds-sheet { border: 3px solid var(--color-ink, #1d1524); border-radius: 4px; background: #fff; color: var(--color-ink, #1d1524); font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 1.1875rem; line-height: 1.5; } .ds-sheet-head { display: flex; align-items: flex-start; gap: 1rem; padding: 1.5rem; } .ds-sheet-ring { flex: none; color: var(--color-course, #7c1fc2); font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); line-height: 0; } .ds-sheet-title { flex: 1; margin: 0; font-family: var(--font-display, \"League Gothic\", \"Arial Narrow\", sans-serif); font-size: clamp(1.75rem, 2.4vw, 2.125rem); font-weight: 400; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; } .ds-sheet-badge { display: inline-block; border-radius: 4px; padding: 0.125rem 0.5rem; background: var(--color-course, #7c1fc2); color: #fff; font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; } .ds-sheet-badge { flex: none; } .ds-sheet-rows { margin: 0; } .ds-sheet-row { display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); border-top: 2px solid var(--color-ink, #1d1524); } .ds-sheet-row dt { font-family: var(--font-body, \"Barlow Semi Condensed\", \"Arial Narrow\", system-ui, sans-serif); font-size: 0.9375rem; font-weight: 600; letter-spacing: 0.09em; line-height: 1.25; text-transform: uppercase; border-right: 2px solid var(--color-ink, #1d1524); padding: 1.25rem 1.5rem; color: var(--color-course-deep, #4a0f7a); } .ds-sheet-row dd { margin: 0; padding: 1.25rem 1.5rem; }"
+			"name": "Ruled Log",
+			"kind": "custom",
+			"refersTo": "paper-sheet",
+			"description": "Lists of facts as tables: a 2px ink header rule, label-lettered faint headers, 1px Rule Grey row rules, numbered markers for rank.",
+			"html": "<div class=\"ds-log\"><div class=\"ds-log-head\"><span>Rank</span><span>Fix</span><span>Affects</span></div><div class=\"ds-log-row\"><svg viewBox=\"0 0 48 44\" width=\"40\" height=\"36\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">1</text></svg><span>AI crawlers are blocked in robots.txt</span><span class=\"ds-log-reach\">Whole site</span></div><div class=\"ds-log-row\"><svg viewBox=\"0 0 48 44\" width=\"40\" height=\"36\" aria-hidden=\"true\"><path d=\"M37 5 46 38 43 40 36.2 9Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><path d=\"M11 5h26l7 35H4Z\" fill=\"var(--color-marker, #ffd31a)\" stroke=\"var(--color-ink, #121315)\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M11 5h26l-.8 4H11.8Z\" fill=\"var(--color-marker-deep, #d9ad00)\"/><text x=\"24\" y=\"32.5\" text-anchor=\"middle\" fill=\"var(--color-ink, #121315)\" style=\"font-family:var(--font-display, \"Archivo Variable\", Arial, sans-serif);font-weight:850;font-size:19px;font-stretch:100%\">2</text></svg><span>38 pages have no meta description</span><span class=\"ds-log-reach\">38 pages</span></div></div>",
+			"css": ".ds-log { background: var(--color-paper, #ffffff); color: var(--color-ink, #121315); font-family: var(--font-body, \"Public Sans\", system-ui, sans-serif); font-size: 1.0625rem; } .ds-log-head, .ds-log-row { display: grid; grid-template-columns: 3.5rem 1fr 7.5rem; gap: 1rem; align-items: center; padding: 0.75rem 1.5rem; } .ds-log-head { font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; color: var(--color-ink-faint, #6b7076); border-bottom: 2px solid var(--color-ink, #121315); } .ds-log-row { border-bottom: 1px solid var(--color-rule, #c4c8c2); font-weight: 600; line-height: 1.35; } .ds-log-row:last-child { border-bottom: 0; } .ds-log-reach { font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.8125rem; font-weight: 400; color: var(--color-ink-soft, #464a50); }"
 		}
 	],
 	"narrative": {
-		"northStar": "The Course Map",
-		"overview": "Margincite is drawn as an orienteering map. The website is the terrain. The fixes are a course across it: a start triangle, numbered control rings, and straight purple legs between them. The rest of the page is treated as parts of the same printed sheet: a title block, a margin strip that holds the key, ruled legend tables, a control description sheet, and a north arrow and scale bar at the foot.\n\nThe sheet is white. A small set of flat spot inks is printed on it, and each ink has one job. Headings are tall condensed gothic capitals. Reading text is a plain semi-condensed sans. Rules are solid and 2px wide. Corners are 4px. Nothing has depth. Things sit on top of each other in print order, and lettering that crosses line work gets a white knock-out behind it.\n\nThe look refuses the usual SaaS landing page of gradient hero, product screenshot and three feature cards. It has to be memorable without being playful, because the product asks to be trusted with evidence.\n\nThe same look is planned for the Electron desktop app. That work is not built. Dense tables in the app will need a plain readable face for data. The display capitals are for headings and control numbers only. See the note under Typography.",
+		"northStar": "The Evidence Room",
+		"overview": "Margincite's public page is set as a forensic bench. A finding is laid down on white paper over a grey bench, numbered yellow markers are set beside each piece of evidence, a black-and-white scale is laid along two edges, and a printed exhibit label says what was found and what the fix is. The page argues by showing: every fix arrives with its evidence. It is light because people read it at a desk, and it is dense the way a case file is dense, with ruled logs and labelled rows rather than cards and gradients.\n\nThe materials are few and physical. Bench grey and paper white are the grounds. Evidence-black ink does the structure: rules, plates, borders, buttons. Marker yellow is the one loud colour, and it belongs to marks: the tents, the key words of the headline, the lettering on ink badges, the closing field and the hover ground. Seal red appears only on what was found or what costs money. Type is wide, heavy Archivo capitals for anything printed by a label machine or set as a heading, Public Sans for reading, and JetBrains Mono for files, commands, counts and recorded values.\n\nMotion is one authored moment, on the exhibit, on load: markers set down 1, 2, 3, the scale drawn up and then along, the exhibit label placed. The visit count in the top bar rolls its digit wheels once when the number arrives. Under reduced motion all of it is off and everything is already in place.",
 		"keyCharacteristics": [
-			"White sheet, flat spot inks, no gradients and no shadows.",
-			"Course purple carries the course, the main rules, the buttons and the main headings.",
-			"Tall condensed gothic capitals for headings. Plain semi-condensed sans for everything read.",
-			"Solid 2px rules divide the sheet. Corners are 4px.",
-			"Open control rings, a start triangle and a double-ring finish mark the order of things.",
-			"Buttons have one active state: ink and ground swap.",
-			"Every illustrated map or report is labelled as an example."
+			"Light grounds (bench, paper) with ink structure and one yellow for marks.",
+			"Seal red is reserved; it is never a decoration or an accent.",
+			"Wide (112% to 125%) heavy Archivo capitals for headings, labels and buttons.",
+			"Mono for every file name, command, count and recorded value.",
+			"Ruled logs (tables and lists with ink and grey rules) instead of cards.",
+			"Forensic props drawn in code: numbered A-frame markers, a scale, rubber stamps, a numbering-stamp counter.",
+			"Square-shouldered corners (3px) and one soft shadow, only for paper on the bench."
 		],
 		"rules": [
 			{
-				"name": "The Spot Ink Rule",
-				"body": "Every fill is one flat, solid ink. No gradients. No drop shadows. No translucent fills. No blend modes, including on the course where it crosses terrain.",
+				"name": "The Seal Rule",
+				"body": "Seal red marks only what was found (the blocked lines in an exhibit) or what costs money (the \"Paid\" stamp). It is not an error colour, a link colour or an accent.",
 				"section": "colors"
 			},
 			{
-				"name": "The Course Purple Rule",
-				"body": "The course is always plain Course Purple. Legs, rings, the start triangle and control numbers are never tinted, never made translucent, and never drawn in another ink on a map. On the purple field the course symbols swap to white, which is the same inversion buttons use.",
+				"name": "The Marker Is A Mark Rule",
+				"body": "Marker yellow is for things that point at evidence or ask to be acted on: tents, highlighted key words, ink-plate lettering, the closing field, hover grounds. It is never a body-text colour on light grounds and never a gradient.",
 				"section": "colors"
 			},
 			{
-				"name": "The Screened Line Rule",
-				"body": "Line work may be printed at reduced strength. The build does this in three places: the contour ground behind a section (16 to 30 percent), the magnetic north lines (60 percent) and the trails (80 percent). This applies to thin lines only. It is never a way to lighten a fill, a button, a border or lettering.",
+				"name": "The Faint-On-Paper Rule",
+				"body": "Ink Faint is used only on white paper, where it holds 4.99:1. On bench it drops to 4.28:1 and on bench-deep to 3.82:1, so faint text on those grounds becomes Ink Soft.",
 				"section": "colors"
 			},
 			{
-				"name": "The Map Ink Rule",
-				"body": "Green and blue stay on the map and in key swatches. Do not use them as section grounds, button colours or status colours.",
-				"section": "colors"
-			},
-			{
-				"name": "The No Stretch Rule",
-				"body": "Lettering is never stretched, squeezed or scaled on one axis to fit a box. The box is sized to the lettering. Map tags measure their text and size the box from it. The map itself crops to fill its frame and is never distorted.",
+				"name": "The Label Printer Rule",
+				"body": "Every small uppercase word is Archivo at 112% width, weight 700, tracked 0.08em. Small capitals are never set in Public Sans or mono.",
 				"section": "typography"
 			},
 			{
-				"name": "The Capitals Rule",
-				"body": "League Gothic is always capitals at weight 400. It is never faked bold, never set in lower case, and never used for running text.",
+				"name": "The Recorded Value Rule",
+				"body": "If a value was read off a site or typed into a terminal (a file, a line, a command, a count, a site name), it is set in JetBrains Mono. Prose about it is Public Sans.",
 				"section": "typography"
 			},
 			{
-				"name": "The Data Face Note (planned, not built)",
-				"body": "When this look moves to the desktop app, dense tables need a plain readable face for data. Do not set table data in League Gothic. Barlow Semi Condensed with tabular figures is the only reading face the build has. Whether it serves dense tables at small sizes, or a plainer face is added for data, has not been decided.",
-				"section": "typography"
-			},
-			{
-				"name": "The Flat Sheet Rule",
-				"body": "If something needs to stand out from what is behind it, give it a solid white ground and a solid rule. Never a shadow, a blur or a see-through panel.",
+				"name": "The One Shadow Rule",
+				"body": "Only paper casts a shadow, and it is always the same shadow. There are no hover lifts and no hard offset shadows.",
 				"section": "elevation"
-			},
-			{
-				"name": "The Knock-Out Rule",
-				"body": "Lettering on the map never has line work running through it. Give it a white box behind, or a white outline around each letter.",
-				"section": "elevation"
-			},
-			{
-				"name": "The Open Ring Rule",
-				"body": "A control is an open ring. It is never filled, so the ground under it stays visible. This holds on the map and wherever a control ring is used as a marker.",
-				"section": "shapes"
-			},
-			{
-				"name": "The Short Leg Rule",
-				"body": "Course legs are straight and stop short of the marks at both ends.",
-				"section": "shapes"
-			},
-			{
-				"name": "The Inversion Rule",
-				"body": "The only active state on a button is a strict swap of ink and ground. No lift, no shadow, no scale, no tint, no darker shade of the same colour.",
-				"section": "components"
-			},
-			{
-				"name": "The Example Label Rule",
-				"body": "The hero map shows an imaginary site. It always carries the example badge and the note that it is an illustration and not a screenshot. Any other illustrated report or interface carries the badge too.",
-				"section": "components"
 			}
 		],
 		"dos": [
-			"Do print every fill as one flat ink from the palette.",
-			"Do keep the course plain Course Purple, with open control rings and straight legs that stop short of each mark.",
-			"Do make the hover state of every button a strict swap of ink and ground, with the border unchanged.",
-			"Do size boxes to their lettering. Measure the text, then draw the box.",
-			"Do label every illustrated map, report or interface with the example badge.",
-			"Do divide content with solid 2px rules and changes of ground.",
-			"Do put a white knock-out or a white halo behind any lettering that sits on the map.",
-			"Do use 4px corners on every box.",
-			"Do set League Gothic in capitals at weight 400 for headings and control numbers only.",
-			"Do keep the skip link, visible focus outlines and reduced-motion handling on every new surface.",
-			"Do use a plain readable face with tabular figures for data when this look moves to the desktop app."
+			"**Do** lay any example finding on paper over the bench, with numbered markers on the exact lines, and an Example badge beside it.",
+			"**Do** number markers in rank or step order, and use the same tent everywhere a number marks evidence.",
+			"**Do** set every file, command, count and recorded value in JetBrains Mono, and every small uppercase word with the label style.",
+			"**Do** build lists of facts as ruled logs: a 2px ink header rule, 1px Rule Grey row rules.",
+			"**Do** keep corners at 3px (2px for the SEO/AIO/GEO tags) and borders in ink.",
+			"**Do** keep every section on the one `wrap` left edge and the 12-column grid from 64rem.",
+			"**Do** put any new motion behind `prefers-reduced-motion: no-preference` and on the ease-out-expo curve."
 		],
 		"donts": [
-			"Don't use gradients, drop shadows, glows, blurs or translucent fills.",
-			"Don't put a blend mode on the course, or tint it, or draw it in another ink on a map.",
-			"Don't fill a control ring.",
-			"Don't give a button any active state other than the ink and ground swap. No lift, no scale, no darker shade.",
-			"Don't stretch, squeeze or scale lettering on one axis to fit a box.",
-			"Don't show the hero map, or any illustrated report, without its example label.",
-			"Don't use green or blue outside a map or a key swatch.",
-			"Don't set running text or table data in League Gothic.",
-			"Don't build the SaaS hero of gradient, screenshot and three feature cards. Lists are ruled tables, not cards.",
-			"Don't edit the generated terrain files by hand. Change the script and regenerate.",
-			"Don't lighten a fill, a border or lettering with opacity. Reduced strength is for thin map line work only."
+			"**Don't** use seal red for anything except what was found or what costs money.",
+			"**Don't** put a shadow on anything that is not paper laid on the bench, and don't use hard offset shadows.",
+			"**Don't** use gradients as fills or backgrounds. The only gradients in the system are the scale's tick pattern.",
+			"**Don't** set Ink Faint text on bench or bench-deep grounds.",
+			"**Don't** show a finding or interface without the Example badge; the page shows illustrations, not screenshots.",
+			"**Don't** add small kicker lines above headings; headings stand on their own.",
+			"**Don't** use pill shapes, large radii, or translucent borders."
 		]
 	}
 }

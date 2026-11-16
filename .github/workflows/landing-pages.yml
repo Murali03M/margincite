@@ -1,6 +1,4 @@
 # Builds the landing page and publishes it with GitHub Pages.
-# Set the repository variable EARLY_ACCESS_ENDPOINT (Settings > Secrets and
-# variables > Actions > Variables) to an https form address to collect sign-ups.
 name: Landing page
 
 on:
@@ -43,7 +41,6 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
           SITE_URL: ${{ steps.pages.outputs.base_url }}
-          VITE_EARLY_ACCESS_ENDPOINT: ${{ vars.EARLY_ACCESS_ENDPOINT }}
       - run: pnpm test:build
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -20,7 +20,7 @@ Success for the first release: the owner runs it on their own site, agrees the s
 
 ## Positioning
 
-One ranked list that covers both Google and AI answers, with evidence on every item, used from inside Claude as a connector. Existing tools either track AI visibility or auto-write posts. Few do both, and working inside Claude is uncommon.
+One ranked list that covers Google search, Google AI Overviews and AI assistants, with evidence on every item. Free and open source under AGPL-3.0, run on your own machine with your own provider keys (decided 2026-11-16). A Claude connector is planned, not built. A direct reference is the Claude SEO Skill (claudeseoskill.com), an SEO/GEO/AEO audit packaged as a Claude skill; the owner asked on 2026-11-16 for a Margincite Claude skill as well.
 
 Margincite measures and reports. It does not promise rankings or citations.
 
@@ -29,18 +29,18 @@ Margincite measures and reports. It does not promise rankings or citations.
 - A web app and a Claude connector, both backed by one hosted Rust service. The web app is built first so the owner can test on their own company site; the connector follows. There is no desktop app. The owner settled this on 2026-11-13.
 - Google Search Console supplies real queries, clicks and impressions.
 - Sites are re-crawled weekly and each fix is confirmed on the next crawl.
-- The public landing page is separate from the app and collects early-access requests.
+- The public landing page is separate from the app. It is hosted on GitHub Pages, its main action is "Get it on GitHub", and it shows a visit count from the Abacus counting service. It no longer collects emails (decided 2026-11-16).
 
 ## Capabilities and Constraints
 
-Phase 1, described on the landing page as working:
+Described on the landing page as working today (see the README's feature table for the full list):
 
 - crawls a whole site, including pages that need JavaScript
 - ranks suggestions across technical SEO, AI readiness and content
 - uses Google Search Console data when connected
-- works inside Claude as a connector
+- AI visibility across Claude, ChatGPT, Gemini, Grok and Perplexity, rank tracking with AI Overviews, page speed and backlinks, each with its own connection
 
-Coming later, and always labelled that way: drafting fixes for approval, and tracking which AI engines cite the site.
+Coming later, and always labelled that way: using Margincite from Claude, ChatGPT and Grok as a connector, drafting fixes for approval, and alerts and reports.
 
 Constraints:
 
@@ -63,7 +63,7 @@ Constraints:
 - The landing page copy in `landing/src/content.ts`.
 - One example suggestion, labelled as an example: "AI crawlers are blocked in robots.txt".
 - There are no customers, testimonials, logos, usage numbers, benchmarks or prices. None may be invented.
-- There are no product screenshots yet, because the app is not built. Any interface shown on the landing page is an illustration and is labelled as an example.
+- The landing page shows no product screenshots. Any finding or interface shown on it is an illustration and is labelled as an example.
 
 ## Product Principles
 

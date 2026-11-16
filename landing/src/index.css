@@ -1,207 +1,224 @@
 @import "tailwindcss";
-@import "@fontsource/league-gothic/latin-400.css";
-@import "@fontsource/barlow-semi-condensed/latin-400.css";
-@import "@fontsource/barlow-semi-condensed/latin-500.css";
-@import "@fontsource/barlow-semi-condensed/latin-600.css";
+@import "@fontsource-variable/archivo/wdth.css";
+@import "@fontsource/public-sans/latin-400.css";
+@import "@fontsource/public-sans/latin-600.css";
+@import "@fontsource/public-sans/latin-700.css";
+@import "@fontsource/jetbrains-mono/latin-400.css";
+@import "@fontsource/jetbrains-mono/latin-700.css";
 
-/* Tokens and base type live in shared/tokens.css so landing/ and web/ cannot drift apart. */
+/* Tokens and base type live in shared/tokens.css. */
 @import "../../shared/tokens.css";
 
 @layer components {
-	/* One left edge for the whole sheet: the hero and every section share it. */
+	/* One left edge for every section. */
 	.wrap {
-		width: min(100% - 2 * var(--gutter), 92rem);
+		width: min(100% - 2 * var(--gutter), 90rem);
 		margin-inline: auto;
 	}
-	.hero-pad {
-		padding-inline: var(--gutter);
-	}
-	.hero {
-		overflow: clip;
-	}
-	@media (min-width: 80rem) {
-		/* As tall as the first screen allows, and never shorter than its own words. */
-		.hero {
-			display: grid;
-			min-height: clamp(42rem, 56.25vw, calc(100svh - 4.5rem));
-		}
-		/* The map's title block: a ruled white panel laid over the terrain. */
-		.title-block {
-			width: clamp(23rem, 31vw, 31rem);
-			border: 2px solid var(--color-course);
-			border-radius: 4px;
-			padding: clamp(1.25rem, 2vw, 2.25rem);
-			background: var(--color-sheet);
-		}
-		.title-block h1 {
-			font-size: clamp(3.9rem, 5.6vw, 5.5rem);
-		}
-		.title-block .lead {
-			font-size: 1.1875rem;
-		}
-		.title-block .btn {
-			width: 100%;
-		}
-	}
 
-	/* Map lettering: the small capitals a cartographer uses for labels. */
+	/* Evidence-label lettering: wide, heavy capitals, the way a label printer sets them. */
 	.label {
-		font-family: var(--font-body);
-		font-size: 0.9375rem;
-		font-weight: 600;
-		letter-spacing: 0.09em;
-		line-height: 1.25;
+		font-family: var(--font-display);
+		font-stretch: 112%;
+		font-size: 0.78rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		line-height: 1.2;
 		text-transform: uppercase;
 	}
 
+	.display {
+		font-stretch: 125%;
+		font-weight: 850;
+		font-size: clamp(2.35rem, 4.5vw, 4.6rem);
+		line-height: 0.96;
+		letter-spacing: -0.02em;
+	}
+	.heading {
+		font-stretch: 125%;
+		font-weight: 850;
+		font-size: clamp(1.9rem, 3.3vw, 3.1rem);
+		line-height: 1;
+		letter-spacing: -0.015em;
+	}
+	.title {
+		font-stretch: 100%;
+		font-size: 1.3125rem;
+		font-weight: 750;
+		line-height: 1.15;
+		letter-spacing: -0.005em;
+	}
 	.lead {
-		font-size: clamp(1.25rem, 1.6vw, 1.4375rem);
-		line-height: 1.42;
+		font-size: clamp(1.125rem, 1.4vw, 1.3125rem);
+		line-height: 1.55;
+	}
+	.measure {
+		max-width: 38rem;
 	}
 
-	/* Buttons. The only active state is a strict inversion of ink and ground. */
+	/* Buttons: ink plates. Hover lays the marker yellow under the lettering. */
 	.btn {
 		display: inline-flex;
 		min-height: 3.25rem;
 		align-items: center;
 		justify-content: center;
-		gap: 0.6rem;
-		border: 2px solid var(--btn-ink, var(--color-course));
-		border-radius: 4px;
-		padding: 0.55rem 1.35rem;
-		background: var(--btn-ground, var(--color-course));
-		color: var(--btn-text, #fff);
-		font-family: var(--font-body);
-		font-size: 1.0625rem;
-		font-weight: 600;
-		letter-spacing: 0.09em;
+		gap: 0.65rem;
+		border: 2px solid var(--color-ink);
+		border-radius: 3px;
+		padding: 0.6rem 1.3rem;
+		background: var(--btn-ground, var(--color-ink));
+		color: var(--btn-text, var(--color-on-ink));
+		font-family: var(--font-display);
+		font-stretch: 112%;
+		font-size: 0.9375rem;
+		font-weight: 750;
+		letter-spacing: 0.06em;
 		line-height: 1.1;
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: pointer;
 		transition:
-			background-color 140ms var(--ease-out-expo),
-			color 140ms var(--ease-out-expo);
+			background-color 160ms var(--ease-out-expo),
+			color 160ms var(--ease-out-expo);
 	}
-	.btn:hover:not(:disabled) {
-		background: var(--btn-text, #fff);
-		color: var(--btn-ground, var(--color-course));
-	}
-	.btn:disabled {
-		cursor: progress;
-		opacity: 0.72;
+	.btn:hover {
+		background: var(--btn-hover, var(--color-marker));
+		color: var(--color-ink);
 	}
 	.btn-line {
-		--btn-ground: #fff;
-		--btn-text: var(--color-course);
+		--btn-ground: transparent;
+		--btn-text: var(--color-ink);
 	}
-	/* On the purple field the inks swap: a white button with purple lettering. */
-	.btn-on-course {
-		--btn-ink: #fff;
-		--btn-ground: #fff;
-		--btn-text: var(--color-course-deep);
+	.btn-compact {
+		min-height: 2.6rem;
+		padding: 0.45rem 0.95rem;
+		font-size: 0.8125rem;
 	}
-	.btn-on-course:hover:not(:disabled) {
-		background: var(--color-course-deep);
-		color: #fff;
-	}
-
-	.field {
-		min-height: 3.25rem;
-		width: 100%;
-		border: 2px solid #fff;
-		border-radius: 4px;
-		padding: 0.55rem 1rem;
-		background: #fff;
-		color: var(--color-ink);
-		font: inherit;
-		font-size: 1.125rem;
-	}
-	.field::placeholder {
-		color: #6a5a78;
-	}
-	.field:focus-visible {
-		outline: 3px solid var(--color-open);
-		outline-offset: 2px;
-	}
-	.field[aria-invalid="true"] {
-		border-color: var(--color-open);
-	}
-
-	.on-course :focus-visible {
-		outline-color: var(--color-open);
-	}
-
-	/* Quiet contour ground for sections that are not the map itself. */
-	.contours {
-		position: relative;
-		isolation: isolate;
-	}
-	.contours::before {
-		content: "";
-		position: absolute;
-		inset: 0;
-		z-index: -1;
-		background: var(--contour-image) var(--contour-shift, center) / 1600px auto;
-		opacity: var(--contour-strength, 0.2);
-		pointer-events: none;
+	/* On the marker-yellow field the hover ground is paper, so it stays visible. */
+	.on-marker .btn {
+		--btn-hover: var(--color-paper);
 	}
 
 	.nav-link {
 		text-decoration: none;
-		transition: color 140ms var(--ease-out-expo);
+		transition: color 160ms var(--ease-out-expo);
 	}
 	.nav-link:hover {
-		color: var(--color-course);
 		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 0.35em;
+	}
+
+	/* Paper laid on the bench: a real, soft shadow with an offset. */
+	.paper {
+		background: var(--color-paper);
+		box-shadow:
+			0 1px 2px rgb(18 19 21 / 0.12),
+			0 14px 28px -10px rgb(18 19 21 / 0.28);
+	}
+
+	/* The forensic scale: alternating black and white units over fine ticks. */
+	.ruler {
+		--unit: 1.25rem;
+		position: relative;
+		height: 1.5rem;
+		border: 1.5px solid var(--color-ink);
+		background:
+			repeating-linear-gradient(90deg, var(--color-ink) 0 1px, transparent 1px calc(var(--unit) / 5)) left bottom / 100% 35% no-repeat,
+			repeating-linear-gradient(90deg, var(--color-ink) 0 var(--unit), var(--color-paper) var(--unit) calc(var(--unit) * 2)) left top / 100% 45% no-repeat,
+			var(--color-paper);
+	}
+	.ruler-v {
+		width: 1.5rem;
+		height: auto;
+		background:
+			repeating-linear-gradient(180deg, var(--color-ink) 0 1px, transparent 1px calc(var(--unit) / 5)) right top / 35% 100% no-repeat,
+			repeating-linear-gradient(180deg, var(--color-ink) 0 var(--unit), var(--color-paper) var(--unit) calc(var(--unit) * 2)) left top / 45% 100% no-repeat,
+			var(--color-paper);
+	}
+
+	/* A rubber stamp on the evidence log: outlined capitals, slightly off square. */
+	.stamp {
+		display: inline-block;
+		border: 2px solid currentColor;
+		border-radius: 3px;
+		padding: 0.15rem 0.45rem;
+		rotate: -2deg;
+	}
+
+	/* The numbering stamp in the top bar. Each place is a wheel of ten digits. */
+	.wheel {
+		display: inline-block;
+		height: 1.2em;
+		overflow: hidden;
+		line-height: 1.2em;
+	}
+	.wheel > span {
+		display: flex;
+		flex-direction: column;
+		translate: 0 calc(var(--digit, 0) * -1.2em);
+		transition: translate 900ms var(--ease-out-expo);
+		transition-delay: calc(var(--place) * 70ms);
 	}
 }
 
-/* The one authored moment: the course is drawn leg by leg, control by control. */
+/* The one authored moment: markers are set down 1, 2, 3, then the scale is laid
+   along the evidence and the label is placed. Everything is visible without it. */
 @media (prefers-reduced-motion: no-preference) {
-	.course-leg {
-		stroke-dasharray: 1;
-		animation: draw-leg 620ms var(--ease-out-expo) both;
-		animation-delay: calc(var(--step) * 260ms + 250ms);
+	.set-marker {
+		animation: set-down 560ms var(--ease-out-expo) both;
+		animation-delay: calc(var(--step) * 180ms + 200ms);
 	}
-	.course-mark {
-		transform-box: fill-box;
-		transform-origin: center;
-		animation: punch 520ms var(--ease-out-expo) both;
-		animation-delay: calc(var(--step) * 260ms + 250ms);
+	.lay-ruler {
+		animation: lay 700ms var(--ease-out-expo) both;
+		animation-delay: 1070ms;
 	}
-	.course-tag {
-		animation: settle 520ms var(--ease-out-expo) both;
-		animation-delay: calc(var(--step) * 260ms + 380ms);
+	.ruler-v.lay-ruler {
+		animation-name: lay-up;
+		animation-delay: 820ms;
+	}
+	.place-tag {
+		animation: place 620ms var(--ease-out-expo) both;
+		animation-delay: 1300ms;
 	}
 }
 
-@keyframes draw-leg {
-	from {
-		stroke-dashoffset: 1;
-	}
-	to {
-		stroke-dashoffset: 0;
-	}
-}
-@keyframes punch {
+@keyframes set-down {
 	from {
 		opacity: 0;
-		scale: 1.5;
-	}
-	to {
-		opacity: 1;
-		scale: 1;
-	}
-}
-@keyframes settle {
-	from {
-		opacity: 0;
-		translate: -10px 0;
+		translate: 0 -14px;
 	}
 	to {
 		opacity: 1;
 		translate: 0 0;
+	}
+}
+@keyframes lay {
+	from {
+		clip-path: inset(0 100% 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+@keyframes lay-up {
+	from {
+		clip-path: inset(100% 0 0 0);
+	}
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+@keyframes place {
+	from {
+		opacity: 0;
+		translate: 0 12px;
+		filter: blur(3px);
+	}
+	to {
+		opacity: 1;
+		translate: 0 0;
+		filter: blur(0);
 	}
 }
 
@@ -212,6 +229,7 @@
 		animation-duration: 0.001ms !important;
 		animation-delay: 0ms !important;
 		transition-duration: 0.001ms !important;
+		transition-delay: 0ms !important;
 		scroll-behavior: auto !important;
 	}
 }

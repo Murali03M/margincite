@@ -27,9 +27,6 @@ try {
 	writeFileSync(join(dist, "robots.txt"), server.buildRobots(siteUrl));
 	writeFileSync(join(dist, "sitemap.xml"), server.buildSitemap(siteUrl, new Date().toISOString().slice(0, 10)));
 	console.log(`Pre-rendered ${siteUrl}/ (${(html.length / 1024).toFixed(1)} KB of HTML)`);
-	if (!/^https:\/\//.test(process.env.VITE_EARLY_ACCESS_ENDPOINT ?? "")) {
-		console.warn("Warning: VITE_EARLY_ACCESS_ENDPOINT is not set to an https address. The early-access form in this build will not collect emails.");
-	}
 } catch (error) {
 	console.error(`Pre-render failed: ${error instanceof Error ? error.message : error}`);
 	process.exitCode = 1;

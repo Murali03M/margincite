@@ -7,6 +7,7 @@ import { content } from "../../src/content";
 const dist = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "dist");
 const html = readFileSync(join(dist, "index.html"), "utf8");
 const root = html.slice(html.indexOf('<div id="root">'));
+const text = root.replace(/&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
 const assets = readdirSync(join(dist, "assets"));
 const css = assets
 	.filter((file) => file.endsWith(".css"))
@@ -14,17 +15,25 @@ const css = assets
 	.join("");
 
 it("has every section's text in the HTML itself", () => {
-	for (const text of [
+	for (const line of [
 		content.hero.titleAccent,
 		content.hero.body,
-		content.hero.sketchNotes[0],
+		content.hero.exhibit.tag.rows[1].value,
 		content.features.heading,
 		content.features.items[3].body,
+		content.layers.rows[2].cells[2],
 		content.how.steps[2].title,
 		content.product.note.title,
+		content.product.sample.rows[2].title,
 		content.product.honesty,
-		content.cta.heading,
-	]) expect(root).toContain(text);
+		content.faq.items[3].answer,
+		content.getIt.heading,
+		content.getIt.commands[0],
+	]) expect(text).toContain(line);
+});
+
+it("prints no visit count into the HTML", () => {
+	expect(root).not.toMatch(/data-digit/);
 });
 
 it("hides nothing and leaves no template markers", () => {
@@ -39,22 +48,15 @@ it("has exactly one title and one canonical link", () => {
 });
 
 it("serves its own fonts", () => {
-	expect(css).toMatch(/@font-face\s*\{[^}]*League Gothic/);
-	expect(css).toMatch(/@font-face\s*\{[^}]*Barlow Semi Condensed/);
+	expect(css).toMatch(/@font-face\s*\{[^}]*Archivo Variable/);
+	expect(css).toMatch(/@font-face\s*\{[^}]*Public Sans/);
+	expect(css).toMatch(/@font-face\s*\{[^}]*JetBrains Mono/);
 	expect(html + css).not.toContain("fonts.googleapis.com");
 	expect(assets.some((file) => file.endsWith(".woff2"))).toBe(true);
 });
 
-it("ships the map artwork as static files with no scripts in them", () => {
-	for (const name of ["terrain.svg", "contours-brown.svg", "contours-white.svg"]) {
-		const svg = readFileSync(join(dist, "map", name), "utf8");
-		expect(svg.startsWith("<svg")).toBe(true);
-		expect(svg).not.toMatch(/<script|onload=|href="http/i);
-	}
-});
-
 it("keeps the direction contract in the built page", () => {
-	expect(html).toContain("Seed key b960e27d");
+	expect(html).toContain("seed key cb30d7e8");
 });
 
 it("writes robots.txt and sitemap.xml", () => {

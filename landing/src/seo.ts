@@ -1,4 +1,4 @@
-import { content } from "./content";
+import { REPO_URL, content } from "./content";
 
 /** The crawlers Margincite checks robots.txt rules for. This page lets all of them in. */
 export const AI_CRAWLERS: readonly string[] = [
@@ -46,6 +46,18 @@ export function buildJsonLd(siteUrl: string): object[] {
 			description: content.seo.description,
 			applicationCategory: "BusinessApplication",
 			url,
+			isAccessibleForFree: true,
+			license: "https://www.gnu.org/licenses/agpl-3.0.html",
+			sameAs: [REPO_URL],
+		},
+		{
+			"@context": "https://schema.org",
+			"@type": "FAQPage",
+			mainEntity: content.faq.items.map((item) => ({
+				"@type": "Question",
+				name: item.question,
+				acceptedAnswer: { "@type": "Answer", text: item.answer },
+			})),
 		},
 	];
 }
