@@ -64,7 +64,7 @@ export const content = {
 		heading: "What it does today",
 		intro: "Everything here works in the current release. Each line says what it needs. A feature without its connection is simply off, and the app says how to turn it on.",
 		columns: { what: "What you get", serves: "Serves", needs: "Needs" },
-		costs: { free: "Free", key: "Your key", paid: "Paid" } satisfies Record<Cost, string>,
+		costs: { free: "Free", key: "Your AI key", paid: "Paid service" } satisfies Record<Cost, string>,
 		items: [
 			{
 				title: "Crawl and site health",

@@ -317,7 +317,7 @@
 			"kind": "chip",
 			"refersTo": "serves-tag",
 			"description": "Mono SEO/AIO/GEO tags with a 1.5px ink border, and rubber cost stamps rotated -2deg; Paid is seal red.",
-			"html": "<div class=\"ds-chips\"><span class=\"ds-tag\">SEO</span><span class=\"ds-tag\">AIO</span><span class=\"ds-tag\">GEO</span><span class=\"ds-stamp\">Free</span><span class=\"ds-stamp\">Your key</span><span class=\"ds-stamp ds-stamp-paid\">Paid</span></div>",
+			"html": "<div class=\"ds-chips\"><span class=\"ds-tag\">SEO</span><span class=\"ds-tag\">AIO</span><span class=\"ds-tag\">GEO</span><span class=\"ds-stamp\">Free</span><span class=\"ds-stamp\">Your AI key</span><span class=\"ds-stamp ds-stamp-paid\">Paid service</span></div>",
 			"css": ".ds-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem 0.75rem; } .ds-tag { border: 1.5px solid var(--color-ink, #121315); border-radius: 2px; padding: 1px 0.375rem; font-family: var(--font-mono, \"JetBrains Mono\", ui-monospace, monospace); font-size: 0.75rem; font-weight: 700; line-height: 1.35; color: var(--color-ink, #121315); } .ds-stamp { display: inline-block; font-family: var(--font-display, \"Archivo Variable\", Arial, sans-serif); font-stretch: 112%; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; line-height: 1.2; text-transform: uppercase; font-size: 0.6875rem; border: 2px solid currentColor; border-radius: 3px; padding: 0.15rem 0.45rem; rotate: -2deg; color: var(--color-ink, #121315); } .ds-stamp-paid { color: var(--color-seal, #c8231b); }"
 		},
 		{

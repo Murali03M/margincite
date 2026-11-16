@@ -183,7 +183,7 @@ A near-neutral bench-and-paper palette with evidence-black ink, one saturated ye
 - **Marker Shade** (#d9ad00): only inside the marker drawing, for the folded side and the top lip of the tent. Not used as a surface or text colour.
 
 ### Secondary
-- **Seal Red** (#c8231b): the blocked `Disallow: /` lines in the exhibit (bold mono), and the "Paid" cost stamp. 5.66:1 on paper.
+- **Seal Red** (#c8231b): the blocked `Disallow: /` lines in the exhibit (bold mono), and the "Paid service" cost stamp. 5.66:1 on paper.
 
 ### Neutral
 - **Evidence Ink** (#121315 light, #eceee9 dark): text, every structural rule and border, and the primary button ground (its lettering is the bench colour, so the button inverts with the room).
@@ -214,7 +214,7 @@ Dark is the default, also without JavaScript. A sun/moon switch in the top bar (
 The marker-yellow field ("Run it on your own site") is lit the same in both rooms: `.on-marker` resets the light values inside it.
 
 ### Named Rules
-**The Seal Rule.** Seal red marks only what was found (the blocked lines in an exhibit) or what costs money (the "Paid" stamp). It is not an error colour, a link colour or an accent.
+**The Seal Rule.** Seal red marks only what was found (the blocked lines in an exhibit) or what costs money (the "Paid service" stamp). It is not an error colour, a link colour or an accent.
 
 **The Marker Is A Mark Rule.** Marker yellow is for things that point at evidence or ask to be acted on: tents, highlighted key words, ink-plate lettering, the closing field, hover grounds. It is never a body-text colour on light grounds and never a gradient.
 
@@ -287,7 +287,7 @@ Ink plates with wide label lettering; hover lays marker yellow under the words.
 
 ### Chips (tags and stamps)
 - **SEO/AIO/GEO tags:** mono 0.75rem bold, 1.5px ink border, 2px corners. They say which kind of search a feature or fix serves.
-- **Cost stamps:** label lettering 0.6875rem in a 2px currentColor border, 3px corners, rotated -2deg. "Free" and "Your key" are ink; "Paid" is seal red.
+- **Cost stamps:** label lettering 0.6875rem in a 2px currentColor border, 3px corners, rotated -2deg. "Free" and "Your AI key" are ink; "Paid service" is seal red. The stamp names what the connected service costs, never Margincite, which is free.
 - **Example badge:** label lettering in marker yellow on an ink plate. Every illustrated finding carries it.
 
 ### Cards / Containers (paper sheets)
